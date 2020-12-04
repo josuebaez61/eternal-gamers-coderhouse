@@ -1,0 +1,326 @@
+@font-face {
+    font-family: "Quantico Bold";
+    src: url(../fonts/Quantico-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-VariableFont_wght.ttf);
+}
+
+.fontQuanticoBold {
+    font-family: "Quantico Bold";
+}
+
+.topHeader a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+:root {
+    --main-black: #1D1D1D;
+    --main-grey : #4A4A4A;
+    --main-red  : #EB3136;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: var(--main-grey) !important; */
+    background-color: black !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Jura', sans-serif;
+}
+
+.br5 {
+    border-radius: 5px;
+}
+
+.br10 {
+    border-radius: 10px;
+}
+
+.redUnderline {
+    border-bottom: var(--main-red) 2px solid;
+    padding-bottom: 10px;
+}
+
+.mainGrid {
+    display: grid;
+    height: 100vh;
+    position: relative;
+}
+
+/* SECTION Start: topHeader */
+
+.topHeader {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--main-black);
+    height: 60px;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    font-size: 1.5rem;
+    box-shadow: 0px 1px 8px var(--main-red);
+}
+
+
+.topHeader i {
+    font-size: 1.5rem;
+}
+
+.topHeader nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+.topHeader nav:hover {
+    background-color: var(--main-grey);
+}
+
+.topHeader ul {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.topHeader ul li:first {
+    display: inline-block;
+}
+
+.topHeader ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.topHeader li ul li a {
+    display: inline-block;
+    width: 100%;
+    border: transparent 1.5px solid;  
+    font-size: 1.2rem;
+}
+
+.topHeader li ul li a:hover {
+    border-bottom: var(--main-black) 1.5px solid;  
+    background-color: #ccc;
+}
+
+.topHeader ul li ul {
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    display: none;
+    height: 100vh;
+    left: 0px;
+    position: absolute;
+    top: 60px;
+    width: max-content;
+    width: 23rem;
+}
+
+.topHeader nav:hover ul li ul {
+    display: block;
+    animation: slideInLeft;
+    animation-duration: 0.5s;
+}
+
+/* !SECTION End: topHeader */
+
+#mainBackground {
+    background-image: url(../images/backgrounds/eternal-1.jpg);
+    background-repeat: no-repeat;
+}
+
+#pcBackground {
+    background-image: url(../images/backgrounds/cyberpunk2077.jpg);
+    background-repeat: no-repeat;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: 2fr 20rem;
+    grid-template-areas:"lastest_releases   lastest_releases"
+                        "outstanding_news   outstanding_news"
+                        "main_body          aside           ";
+    position: relative;
+    background-color: var(--main-black);
+    height: max-content;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.bgDark {
+    background-color: var(--main-black);
+}
+
+.topBanner img {
+    width: 100%;
+}
+
+.nav-item a {
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#mainBody {
+    grid-area: main_body;
+}
+
+#lastestReleases {
+    grid-area: lastest_releases;
+}
+
+#outstandingNewsSection {
+    grid-area: outstanding_news;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.outstandingNewsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    justify-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.outstandingNewsCard {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 22rem;
+    overflow: hidden;
+}
+
+.outstandingNewsCard img {
+    width: 100%;
+    transition: transform 1s;
+}
+
+.outstandingNewsCard a {
+    color: white;
+}
+
+.outstandingNewsCard a:hover {
+    color: #ccc;
+}
+
+.outstandingNewsCard a:hover img {
+    transform: scale(1.1,1.1);
+}
+
+.outstandingNewsCard h3 {
+    margin-bottom: 0px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(253,187,45,0) 100%);
+}
+
+.youTubeIframe {
+    width:100% ;
+}
+
+.checkedStar {
+    color: gold;
+}
+
+.mainFooter {
+    height: 20rem;
+    background-color: var(--main-grey);
+    position: relative;
+    margin-top: 2rem;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.mainFooter a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.headerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerLogo h1 {
+    margin: 0px;
+}
+
+.dateFilterList {
+    list-style: none;
+}
+
+.dateFilterList ul {
+    list-style: square;
+    list-style-position: inside;
+}
+
+.dateFilterList a {
+    color: white;
+    font-family: 'Jura', sans-serif;
+}
+
+.stickyList {
+    position: sticky;
+    top: 70px;
+}
+
+.newsBodyColumn article {
+    background-color: var(--main-grey);
+    border-radius: 5px;
+}
+
+.socialIcons{
+    font-size: 2rem;
+    color: white;
+}
+
+.newsBodyColumn article footer a:hover{
+    color: var(--main-red);
+}
+.pDate {
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.fontJura {
+    font-family: 'Jura', sans-serif;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.listNone {
+    list-style: none;
+}
+
+.listSquare {
+    list-style: square;
+}
+
+.listInside{
+    list-style-position: inside;
+}
+
+.bgMainGrey {
+    background-color: var(--main-grey);
+}
