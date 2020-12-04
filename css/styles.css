@@ -37,7 +37,7 @@ h1, h2, h3 {
     font-family: 'Jura', sans-serif;
 }
 
-.br5 {
+.borderRadius5 {
     border-radius: 5px;
 }
 
@@ -59,10 +59,6 @@ h1, h2, h3 {
 /* SECTION Start: topHeader */
 
 .topHeader {
-    display: flex;
-    justify-content: flex-start;
-    justify-items: center;
-    align-items: center;
     background-color: var(--main-black);
     height: 60px;
     position: sticky;
@@ -78,9 +74,6 @@ h1, h2, h3 {
 }
 
 .topHeader nav {
-    display: flex;
-    align-items: center;
-    height: 100%;
     background-color: rgb(20, 20, 20);
 }
 
@@ -137,17 +130,17 @@ h1, h2, h3 {
 
 /* !SECTION End: topHeader */
 
-#mainBackground {
+.doomBackground {
     background-image: url(../images/backgrounds/eternal-1.jpg);
     background-repeat: no-repeat;
 }
 
-#pcBackground {
+.cyberpunkBackground {
     background-image: url(../images/backgrounds/cyberpunk2077.jpg);
     background-repeat: no-repeat;
 }
 
-.contentContainer {
+.gridMainContainer {
     display: grid;
     grid-template-columns: 2fr 20rem;
     grid-template-areas:"lastest_releases   lastest_releases"
@@ -175,21 +168,29 @@ h1, h2, h3 {
     font-size: 1.5rem;
 }
 
-#mainBody {
+/* SECTION ============================================
+Grid areas...
+==================================================== */
+
+.gridAreaBody {
     grid-area: main_body;
 }
 
-#lastestReleases {
+.gridAreaLeastestReleases {
     grid-area: lastest_releases;
 }
 
-#outstandingNewsSection {
+.gridAreaOutstandingNews {
     grid-area: outstanding_news;
 }
 
-aside {
+.gridAreaAside {
     grid-area: aside;
 }
+
+/* !SECTION ===========================================
+Grid areas...
+==================================================== */
 
 .outstandingNewsGrid {
     display: grid;
