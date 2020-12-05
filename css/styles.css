@@ -12,7 +12,7 @@
     font-family: "Quantico Bold";
 }
 
-.topHeader a:link, a:visited, a:active {
+.stickyHeader a:link, a:visited, a:active {
     text-decoration: none;
 }
 
@@ -31,21 +31,22 @@
 body {
     /* background-color: var(--main-grey) !important; */
     background-color: black !important;
+    /* height: 100vh;; */
+}
+
+.hola{
+    min-height: calc(100vh - 325px);
+}
+
+.vh1000 {
+    height: 100vh;
 }
 
 h1, h2, h3 {
     font-family: 'Jura', sans-serif;
 }
 
-.borderRadius5 {
-    border-radius: 5px;
-}
-
-.br10 {
-    border-radius: 10px;
-}
-
-.redUnderline {
+.red-underline {
     border-bottom: var(--main-red) 2px solid;
     padding-bottom: 10px;
 }
@@ -56,104 +57,112 @@ h1, h2, h3 {
     position: relative;
 }
 
-/* SECTION Start: topHeader */
-
-.topHeader {
-    background-color: var(--main-black);
-    height: 60px;
+.stickyHeader {
     position: sticky;
     top: 0px;
     z-index: 9999;
-    font-size: 1.5rem;
+}
+
+/* =====================================
+SECTION Start: Nav
+======================================*/
+
+.topNavbar {
+    background-color: var(--main-black);
     box-shadow: 0px 1px 8px var(--main-red);
 }
 
-
-.topHeader i {
-    font-size: 1.5rem;
+.topNavbar ul li:first-child {
+    background-color: black;
 }
 
-.topHeader nav {
-    background-color: rgb(20, 20, 20);
-}
-
-.topHeader nav:hover {
-    background-color: var(--main-grey);
-}
-
-.topHeader ul {
-    list-style: none;
-    margin-bottom: 0px;
-}
-
-.topHeader ul li:first {
-    display: inline-block;
-}
-
-.topHeader ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Jura', sans-serif;
-    font-size: 1.5rem;
+.topNavbar ul:first-child a:first-child {
     padding: 1rem;
 }
 
-.topHeader li ul li a {
-    display: inline-block;
-    width: 100%;
-    border: transparent 1.5px solid;  
-    font-size: 1.2rem;
-}
-
-.topHeader li ul li a:hover {
-    border-bottom: var(--main-black) 1.5px solid;  
-    background-color: #ccc;
-}
-
-.topHeader ul li ul {
-    background-color: white;
-    border-bottom-right-radius: 5px;
+/* =====================================
+ANCHOR  Sub-menu
+======================================*/
+.topNavbar ul:last-child {
     display: none;
+    background-color: white;
     height: 100vh;
     left: 0px;
     position: absolute;
-    top: 60px;
-    width: max-content;
-    width: 23rem;
+    top: 68px;
+    width: 20rem;
+}
+@media (max-width: 390px) {
+    .topNavbar ul:last-child { 
+        width: 15rem;
+    }
 }
 
-.topHeader nav:hover ul li ul {
+.topNavbar ul:last-child a:last-child {
+    padding: 1.5rem;
+}
+
+.topNavbar li:first-child:hover ul:last-child {
     display: block;
     animation: slideInLeft;
     animation-duration: 0.5s;
 }
 
-/* !SECTION End: topHeader */
+.topNavbar ul:last-child a {
+    color: black;
+    font-size: 1.3rem;
+}
 
-.doomBackground {
+.topNavbar ul:last-child li {
+    background-color: white;
+    border-bottom: transparent 1px solid;
+}
+
+.topNavbar ul:last-child li:hover {
+    background-color: rgb(206, 206, 206);
+    border-bottom: black 1px solid;
+}
+/* =====================================
+!SECTION End: Nav
+======================================*/
+.halo_background {
+    background-image: url(../images/backgrounds/halo.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.freefire_background {
+    background-image: url(../images/backgrounds/free-fire.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.doom_background {
     background-image: url(../images/backgrounds/eternal-1.jpg);
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
-.cyberpunkBackground {
+.cyberpunk_background {
     background-image: url(../images/backgrounds/cyberpunk2077.jpg);
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
-.gridMainContainer {
-    display: grid;
-    grid-template-columns: 2fr 20rem;
-    grid-template-areas:"lastest_releases   lastest_releases"
-                        "outstanding_news   outstanding_news"
-                        "main_body          aside           ";
-    position: relative;
-    background-color: var(--main-black);
-    height: max-content;
-    row-gap: 1rem;
-    column-gap: 1rem;
+.cod_background {
+    background-image: url(../images/backgrounds/cod-wz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+@media (max-width: 1024px) {
+    .cod_background {
+        background-image: url(../images/backgrounds/mobile-cod.jpg);
+    }
 }
 
-.bgDark {
+.bgMainBlack {
     background-color: var(--main-black);
 }
 
@@ -168,39 +177,6 @@ h1, h2, h3 {
     font-size: 1.5rem;
 }
 
-/* SECTION ============================================
-Grid areas...
-==================================================== */
-
-.gridAreaBody {
-    grid-area: main_body;
-}
-
-.gridAreaLeastestReleases {
-    grid-area: lastest_releases;
-}
-
-.gridAreaOutstandingNews {
-    grid-area: outstanding_news;
-}
-
-.gridAreaAside {
-    grid-area: aside;
-}
-
-/* !SECTION ===========================================
-Grid areas...
-==================================================== */
-
-.outstandingNewsGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: max-content;
-    justify-items: center;
-    width: 100%;
-    gap: 0.5rem;
-}
-
 .outstandingNewsCard {
     display: flex;
     flex-wrap: wrap;
@@ -209,9 +185,21 @@ Grid areas...
     overflow: hidden;
 }
 
+.overflow-hidden {
+    overflow: hidden;   
+}
+
+/* @media (max-width:1000px) {
+    .outstandingNewsCard {
+        width: 18rem;
+    }
+} */
+
 .outstandingNewsCard img {
     width: 100%;
     transition: transform 1s;
+    overflow: hidden;
+
 }
 
 .outstandingNewsCard a {
@@ -226,7 +214,7 @@ Grid areas...
     transform: scale(1.1,1.1);
 }
 
-.outstandingNewsCard h3 {
+.outstandingNewsCard p {
     margin-bottom: 0px;
     padding: 10px;
     position: absolute;
@@ -235,34 +223,21 @@ Grid areas...
     background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(253,187,45,0) 100%);
 }
 
-.youTubeIframe {
-    width:100% ;
-}
-
 .checkedStar {
     color: gold;
 }
 
 .mainFooter {
-    height: 20rem;
     background-color: var(--main-grey);
+    height: 100%;
+    padding: 3rem 4rem 4rem 4rem;
+    clear: both;
     position: relative;
-    margin-top: 2rem;
-    padding: 2rem 4rem 2rem 4rem;
+    margin-top: auto;
 }
 
 .mainFooter a:link, a:visited, a:active {
     text-decoration: none;
-}
-
-.headerLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.headerLogo h1 {
-    margin: 0px;
 }
 
 .dateFilterList {
@@ -297,6 +272,7 @@ Grid areas...
 .newsBodyColumn article footer a:hover{
     color: var(--main-red);
 }
+
 .pDate {
     font-style: italic;
     text-transform: capitalize;
@@ -324,4 +300,19 @@ Grid areas...
 
 .bgMainGrey {
     background-color: var(--main-grey);
+}
+
+/* ANCHOR Border radius los contenedores*/
+.containerBorderRadius {
+    border-radius: 5px;
+}
+@media (max-width: 575px) {
+    .containerBorderRadius {
+        border-radius: 0px;
+    }
+}
+
+.newsImages {
+    max-width: 600px;
+    border-radius: 5px;
 }
