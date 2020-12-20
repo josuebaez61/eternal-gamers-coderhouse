@@ -1,0 +1,39 @@
+@import '../utilities/colors';
+@import '../fonts/typo';
+
+.mainfooter {
+    background-color: $main-grey;
+    height: 100%;
+    padding: 3rem 4rem 4rem 4rem;
+    clear: both;
+    position: relative;
+    margin-top: auto;
+
+    
+    .mainfooter__column {
+        h1, h2, h3 {
+            font-family: $font-quanticoBold;
+        }
+        h4 {
+            font-family: $font-jura;
+            font-weight: 600;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul {
+            list-style: square;
+            li {
+                a:hover {
+                    color: #ccc;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .mainfooter__social-icon {
+        font-size: 2rem;
+        color: white;
+    }
+}

@@ -1,19 +1,19 @@
 function createSlider( slider ) {
-    $(`.slider-${slider}`).slick({
+    $(`#slider-${slider}`).slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: `.slider-${slider}-nav`,
+    asNavFor: `#slider-${slider}-nav`
     });
-    $(`.slider-${slider}-nav`).slick({
+    $(`#slider-${slider}-nav`).slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: `.slider-${slider}`,
+    asNavFor: `#slider-${slider}`,
     dots: false,
     centerMode: true,
     focusOnSelect: true,
-    arrows: true,
+    arrows: false,
     responsive: [
         {
         breakpoint: 1024,
@@ -43,8 +43,8 @@ function createSlider( slider ) {
 }
 
 function destroySlider( slider ) {
-    $(`.slider-${slider}`).slick('unslick');
-    $(`.slider-${slider}-nav`).slick('unslick');
+    $(`#slider-${slider}`).slick('unslick');
+    $(`#slider-${slider}-nav`).slick('unslick');
 }
 
 const accordionBodies = document.querySelectorAll('.accordion-collapse');
@@ -62,3 +62,67 @@ accordionBodies.forEach( body => {
         destroySlider(body.dataset.game);
     })
 });
+
+
+function getHash() {
+    if (window.location.hash) { // NOTE si hay hash...
+        var trigger = document.querySelector(window.location.hash);
+        if ( trigger ) { // NOTE si existe ese elemento...
+            var tab = new bootstrap.Tab(trigger)
+            tab.show()
+        }
+    }
+}
+
+$('#slick-aoe2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: false,
+})
+
+$('#slick-aoe3').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: false,
+})
+
+$('#slick-aoe1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: false,
+})
+
+var tabDestacados = document.querySelector('#nav-featured-tab');
+tabDestacados.addEventListener('shown.bs.tab', () => {
+    $('#slick-aoe2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+    })
+    
+    $('#slick-aoe3').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+    })
+    
+    $('#slick-aoe1').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+    })
+})
+
+tabDestacados.addEventListener('hide.bs.tab', () => {
+    $('#slick-aoe1').slick('unslick');
+    $('#slick-aoe2').slick('unslick');
+    $('#slick-aoe3').slick('unslick');
+})
+
+getHash();

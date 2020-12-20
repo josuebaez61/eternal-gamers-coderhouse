@@ -199,14 +199,14 @@ ANCHOR  Sub-menu
     transform: scale(1.1,1.1);
 }
 
-.outstandingNewsCard p {
+/* .outstandingNewsCard p {
     margin-bottom: 0px;
     padding: 10px;
     position: absolute;
     bottom: 0px;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(253,187,45,0) 100%);
-}
+} */
 
 .checkedStar {
     color: gold;

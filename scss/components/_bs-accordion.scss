@@ -1,0 +1,44 @@
+@import "../utilities/_colors.scss";
+@import "../fonts/typo.scss";
+@import "../utilities/mixins";
+
+.accordion {
+  h1,
+  h2,
+  h3 {
+    border-bottom: 0px !important;
+  }
+  .accordion-body {
+    color: white;
+    padding: 1rem 0rem;
+  }
+
+ 
+
+  .accordion-button {
+    color: white;
+    text-align: left;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.53);
+    @include media(xs) {
+      text-align: center;
+    }
+    &:focus {
+      z-index: 3;
+      border-color: #830c32;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgb(130, 15, 65);
+    }
+
+    &::after {
+      background-image: url(../images/svg/chevron-down-solid.svg);
+    }
+
+    &:not(.collapsed)::after {
+      background-image: url(../images/svg/chevron-down-solid.svg);
+      transform: rotate(180deg);
+    }
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #c60f48;
+  }
+}

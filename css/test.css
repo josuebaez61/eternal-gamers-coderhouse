@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+.franchise-card-body {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.zephyrus-article {
+  background-image: url(../images/pc/hardware/kv-cover.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 937px;
+  max-height: 937px;
+  margin-left: -12px;
+  margin-right: -12px; }
+
+.zephyrus-article__image {
+  width: 20%; }
+  @media (max-width: 767px) {
+    .zephyrus-article__image {
+      width: 50%; } }
+
+.news-column {
+  background-color: #111111; }
+
+.news-article {
+  background-color: #111111; }
+  @media (max-width: 767px) {
+    .news-article {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  @media (min-width: 767px) and (max-width: 1023px) {
+    .news-article {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  @media (min-width: 1023px) and (max-width: 1360px) {
+    .news-article {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media (min-width: 1360px) {
+    .news-article {
+      padding-left: 8rem;
+      padding-right: 8rem; } }
+
+.news-article__container {
+  background-color: #1D1D1D;
+  padding: 1rem; }
+
+.news-article__footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4A4A4A;
+  padding: 0.5rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+.news-article__paragraph {
+  text-align: justify; }
+
+.news-article__socials {
+  font-size: 2rem; }
+
+.date-filter-sticky {
+  position: sticky;
+  top: 80px; }
+
+.date-filter-sticky__yearlist {
+  list-style: none; }
+  .date-filter-sticky__yearlist a {
+    color: white; }
+    .date-filter-sticky__yearlist a:visited, .date-filter-sticky__yearlist a:link, .date-filter-sticky__yearlist a:active {
+      text-decoration: none; }
+
+.date-filter-sticky__monthlist {
+  list-style: square;
+  list-style-position: inside; }
+
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
+
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.topheader {
+  position: sticky;
+  top: 0px;
+  z-index: 9999; }
+  .topheader a:link,
+  .topheader a:visited,
+  .topheader a:active {
+    text-decoration: none; }
+  .topheader .topheader__nav {
+    background-color: #1D1D1D;
+    box-shadow: 0px 1px 8px #EB3136; }
+    .topheader .topheader__nav .topheader__item {
+      background-color: #111111;
+      font-family: "Jura";
+      font-size: 1.5rem; }
+      .topheader .topheader__nav .topheader__item a {
+        padding: 1rem;
+        color: white; }
+      .topheader .topheader__nav .topheader__item .topheader__submenu {
+        display: none;
+        background-color: white;
+        height: 100vh;
+        left: 0px;
+        position: absolute;
+        top: 68px;
+        width: 20rem;
+        padding-left: 0px; }
+        .topheader .topheader__nav .topheader__item .topheader__submenu .topheader__submenu-item {
+          background-color: white;
+          border-bottom: transparent 1px solid; }
+          .topheader .topheader__nav .topheader__item .topheader__submenu .topheader__submenu-item a {
+            color: black;
+            font-size: 1.3rem; }
+        .topheader .topheader__nav .topheader__item .topheader__submenu .topheader__submenu-item:hover {
+          background-color: #cecece;
+          border-bottom: black 1px solid; }
+      @media (max-width: 290px) {
+        .topheader .topheader__nav .topheader__item .topheader__submenu {
+          width: 14rem; } }
+      @media (max-width: 390px) {
+        .topheader .topheader__nav .topheader__item .topheader__submenu {
+          width: 15rem; } }
+    .topheader .topheader__nav .topheader__item:hover .topheader__submenu {
+      display: block;
+      animation: slideInLeft;
+      animation-duration: 0.5s; }
+  .topheader .topheader__logo {
+    color: white; }
+    .topheader .topheader__logo h1 {
+      font-family: "Quantico Bold";
+      margin: 0px; }
+
+.mainblock--cod {
+  background-image: url(../images/backgrounds/cod-wz.jpg);
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 1024px) {
+    .mainblock--cod {
+      background-image: url(../images/backgrounds/mobile-cod.jpg); } }
+
+.mainblock--halo {
+  background-image: url(../images/backgrounds/halo.jpg); }
+
+.mainblock--freefire {
+  background-image: url(../images/backgrounds/free-fire.jpg); }
+
+.mainblock--cyberpunk {
+  background-image: url(../images/backgrounds/cyberpunk2077.jpg); }
+
+.mainblock--doom {
+  background-image: url(../images/backgrounds/eternal-1.jpg); }
+
+.mainblock {
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+  .mainblock .mainblock__content {
+    background-color: #1D1D1D;
+    border-radius: 5px;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 1rem; }
+    .mainblock .mainblock__content h1, .mainblock .mainblock__content h2, .mainblock .mainblock__content h3 {
+      padding-bottom: 5px;
+      border-bottom: 2px solid #EB3136;
+      font-family: "Jura"; }
+  @media (max-width: 575px) {
+    .mainblock .mainblock__content {
+      border-radius: 0px; } }
+
+.full-width-container {
+  margin-left: -12px;
+  margin-right: -12px; }
+
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
+
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.mainfooter {
+  background-color: #4A4A4A;
+  height: 100%;
+  padding: 3rem 4rem 4rem 4rem;
+  clear: both;
+  position: relative;
+  margin-top: auto; }
+  .mainfooter .mainfooter__column h1, .mainfooter .mainfooter__column h2, .mainfooter .mainfooter__column h3 {
+    font-family: "Quantico Bold"; }
+  .mainfooter .mainfooter__column h4 {
+    font-family: "Jura";
+    font-weight: 600; }
+  .mainfooter .mainfooter__column a {
+    text-decoration: none; }
+  .mainfooter .mainfooter__column ul {
+    list-style: square; }
+    .mainfooter .mainfooter__column ul li a:hover {
+      color: #ccc;
+      text-decoration: underline; }
+  .mainfooter .mainfooter__social-icon {
+    font-size: 2rem;
+    color: white; }
+
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
+
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.slick-gallery .slick-gallery__item {
+  margin: 5px; }
+  .slick-gallery .slick-gallery__item img {
+    width: 100%; }
+
+.slick-gallery--captions .slick-gallery__item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 22rem;
+  overflow: hidden; }
+  .slick-gallery--captions .slick-gallery__item a {
+    color: white; }
+  .slick-gallery--captions .slick-gallery__item a:hover {
+    color: #ccc; }
+  .slick-gallery--captions .slick-gallery__item p {
+    font-family: "Jura";
+    margin-bottom: 0px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    background: black;
+    background: linear-gradient(0deg, black 8%, rgba(253, 187, 45, 0) 100%); }
+
+.slick-gallery--zoom .slick-gallery__item img {
+  transition: transform 1s; }
+
+.slick-gallery--zoom .slick-gallery__item a:hover img {
+  transform: scale(1.1, 1.1); }
+
+.responsive-yt-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0px;
+  overflow: hidden; }
+  .responsive-yt-iframe iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+
+.responsive-yt-iframe--slick {
+  padding-bottom: 10%;
+  padding-top: 30px; }
+
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
+
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.breadcrumb-custom-block {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  font-family: "Jura";
+  background: #4a4a4a;
+  background: linear-gradient(260deg, #4a4a4a 8%, #1d1d1d 100%); }
+  .breadcrumb-custom-block .breadcrumb-custom-block__ol {
+    margin-bottom: 0px; }
+    .breadcrumb-custom-block .breadcrumb-custom-block__ol .breadcrumb-custom-block__item {
+      font-size: 1.2rem; }
+      .breadcrumb-custom-block .breadcrumb-custom-block__ol .breadcrumb-custom-block__item a {
+        color: white; }
+        .breadcrumb-custom-block .breadcrumb-custom-block__ol .breadcrumb-custom-block__item a:hover {
+          color: #EB3136; }
+
+.horizontal-card {
+  transition: box-shadow 0.5s;
+  border-radius: 0px;
+  background-color: #111111; }
+  .horizontal-card:hover {
+    box-shadow: 0px 1px 8px #EB3136; }
+  .horizontal-card .horizontal-card__image {
+    border-radius: 0px; }
+
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
+
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.nav-pills {
+  font-family: "Jura"; }
+  .nav-pills .nav-link {
+    color: #fff;
+    font-size: 1.2rem; }
+    .nav-pills .nav-link:hover {
+      color: #EB3136; }
+  .nav-pills .nav-link.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #EB3136; }
+
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
+
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.accordion h1,
+.accordion h2,
+.accordion h3 {
+  border-bottom: 0px !important; }
+
+.accordion .accordion-body {
+  color: white;
+  padding: 1rem 0rem; }
+
+.accordion .accordion-button {
+  color: white;
+  text-align: left;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.53); }
+  @media (max-width: 767px) {
+    .accordion .accordion-button {
+      text-align: center; } }
+  .accordion .accordion-button:focus {
+    z-index: 3;
+    border-color: #830c32;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #820f41; }
+  .accordion .accordion-button::after {
+    background-image: url(../images/svg/chevron-down-solid.svg); }
+  .accordion .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/svg/chevron-down-solid.svg);
+    transform: rotate(180deg); }
+
+.accordion .accordion-button:not(.collapsed) {
+  background-color: #c60f48; }
+
+.banner-with-logo {
+  position: relative; }
+  .banner-with-logo .banner-with-logo__banner {
+    width: 100% !important; }
+  .banner-with-logo .banner-with-logo__logo {
+    position: absolute;
+    width: 100%;
+    left: 0px; }

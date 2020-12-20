@@ -1,0 +1,17 @@
+@import '../fonts/typo';
+@import '../utilities/colors';
+
+.nav-pills {
+    font-family: $font-jura;
+    .nav-link {
+        &:hover {
+            color: $main-red;
+        }
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    .nav-link.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: $main-red;
+    }
+}

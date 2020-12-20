@@ -1,0 +1,75 @@
+@import "../utilities/_colors.scss";
+@import "../fonts/typo.scss";
+
+.topheader {
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
+  .topheader__nav {
+    background-color: $main-black;
+    box-shadow: 0px 1px 8px $main-red;
+    .topheader__item {
+      background-color: $main-darkness;
+      font-family: $font-jura;
+      font-size: 1.5rem;
+      a {
+        padding: 1rem;
+        color: white;
+      }
+      .topheader__submenu {
+        display: none;
+        background-color: white;
+        height: 100vh;
+        left: 0px;
+        position: absolute;
+        top: 68px;
+        width: 20rem;
+        padding-left: 0px;
+        .topheader__submenu-item {
+            background-color: white;
+            border-bottom: transparent 1px solid;
+            a {
+              color: black;
+              font-size: 1.3rem;
+            }
+        }
+
+        .topheader__submenu-item:hover {
+            background-color: rgb(206, 206, 206);
+            border-bottom: black 1px solid;
+        }
+      }
+      @media (max-width: 290px) {
+        .topheader__submenu {
+          width: 14rem;
+        }
+      }
+
+      @media (max-width: 390px) {
+        .topheader__submenu {
+          width: 15rem;
+        }
+      }
+    }
+    .topheader__item:hover {
+      .topheader__submenu {
+        display: block;
+        animation: slideInLeft;
+        animation-duration: 0.5s;
+      }
+    }
+  }
+
+  .topheader__logo {
+    color: white;
+    h1 {
+      font-family: $font-quanticoBold;
+      margin: 0px;
+    }
+  }
+}

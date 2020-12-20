@@ -1,0 +1,56 @@
+@import '../utilities/colors';
+
+.mainblock--cod {
+    background-image: url(../images/backgrounds/cod-wz.jpg);
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 1024px) {
+        background-image: url(../images/backgrounds/mobile-cod.jpg);
+    }
+}
+
+.mainblock--halo {
+    background-image: url(../images/backgrounds/halo.jpg);
+}
+
+.mainblock--freefire {
+    background-image: url(../images/backgrounds/free-fire.jpg);
+}
+
+.mainblock--cyberpunk {
+    background-image: url(../images/backgrounds/cyberpunk2077.jpg);
+}
+
+.mainblock--doom {
+    background-image: url(../images/backgrounds/eternal-1.jpg);
+}  
+
+.mainblock {
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    .mainblock__content {
+        background-color: $main-black;
+        border-radius: 5px;
+        color: white;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-top: 1rem;
+
+        h1, h2, h3 {
+            padding-bottom: 5px;
+            border-bottom: 2px solid $main-red;
+            font-family: $font-jura;
+        }
+
+    }
+    @media (max-width: 575px) {
+        .mainblock__content {
+            border-radius: 0px;
+        }
+    }
+}
+
+.full-width-container {
+    margin-left: -12px;
+    margin-right: -12px;
+}

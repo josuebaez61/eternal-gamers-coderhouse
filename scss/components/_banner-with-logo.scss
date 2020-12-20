@@ -1,0 +1,11 @@
+.banner-with-logo {
+    position: relative;
+    .banner-with-logo__banner {
+        width: 100% !important;
+    }
+    .banner-with-logo__logo {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+    }
+}

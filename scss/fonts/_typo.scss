@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Quantico Bold";
+    src: url(../fonts/Quantico-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(../fonts/Jura-VariableFont_wght.ttf);
+}
+
+$font-quanticoBold: "Quantico Bold";
+$font-jura: "Jura";
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.font-jura {
+    font-family: $font-jura;
+}
+
+.font-quaticoBold {
+    font-family: $font-quanticoBold;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-family: $font-jura;
+    }
+}

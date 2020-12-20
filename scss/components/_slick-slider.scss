@@ -1,0 +1,47 @@
+@import "../fonts/typo";
+
+.slick-gallery {
+    .slick-gallery__item {
+        margin: 5px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.slick-gallery--captions {
+    .slick-gallery__item {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 22rem;
+        overflow: hidden;
+        a{
+            color: white;
+        }
+        a:hover {
+            color: #ccc;
+        }
+        p {
+            font-family: $font-jura;
+            margin-bottom: 0px;
+            padding: 10px;
+            position: absolute;
+            bottom: 0px;
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(253,187,45,0) 100%);  
+        }
+    }
+}
+
+.slick-gallery--zoom {
+    .slick-gallery__item {
+        img {
+            transition: transform 1s;
+        }
+        a:hover {
+            img {
+                transform: scale(1.1,1.1);
+            }
+        }
+    }
+}
