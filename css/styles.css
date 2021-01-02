@@ -1,423 +1,763 @@
-@font-face {
-    font-family: "Quantico Bold";
-    src: url(../fonts/Quantico-Bold.ttf);
-}
-
-@font-face {
-    font-family: "Jura";
-    src: url(../fonts/Jura-VariableFont_wght.ttf);
-}
-
-.fontQuanticoBold {
-    font-family: "Quantico Bold";
-}
-
-.stickyHeader a:link, a:visited, a:active {
-    text-decoration: none;
-}
-
-:root {
-    --main-black: #1D1D1D;
-    --main-grey : #4A4A4A;
-    --main-red  : #EB3136;
-}
-
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-    background-color: black !important;
-}
+  background-color: black; }
 
-h1, h2, h3 {
-    font-family: 'Jura', sans-serif;
-}
+.franchise-card-body {
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
-.red-underline {
-    border-bottom: var(--main-red) 2px solid;
-    padding-bottom: 10px;
-}
+.asus-article {
+  background-image: url(../images/pc/hardware/kv-cover.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 937px;
+  max-height: 937px;
+  margin-left: -12px;
+  margin-right: -12px; }
+  @media (max-width: 767px) {
+    .asus-article {
+      min-height: 750px;
+      max-height: 750px; } }
+  @media (max-width: 360px) {
+    .asus-article {
+      min-height: 937px;
+      max-height: 937px; } }
 
-.mainGrid {
-    display: grid;
-    height: 100vh;
-    position: relative;
-}
+.asus-article__image {
+  width: 20%; }
+  @media (max-width: 767px) {
+    .asus-article__image {
+      width: 50%; } }
 
-.stickyHeader {
-    position: sticky;
-    top: 0px;
-    z-index: 9999;
-}
+@media (max-width: 767px) {
+  .asus-article__paragraph {
+    background-color: rgba(0, 0, 0, 0.761);
+    border-radius: 5px; } }
 
-/* =====================================
-SECTION Start: Nav
-======================================*/
+.date-filter-sticky__yearlist {
+  list-style: none; }
+  .date-filter-sticky__yearlist a {
+    color: white; }
+    .date-filter-sticky__yearlist a:visited, .date-filter-sticky__yearlist a:link, .date-filter-sticky__yearlist a:active {
+      text-decoration: none; }
 
-.topNavbar {
-    background-color: var(--main-black);
-    box-shadow: 0px 1px 8px var(--main-red);
-}
+.date-filter-sticky__monthlist {
+  list-style: square;
+  list-style-position: inside; }
 
-.topNavbar ul li:first-child {
-    background-color: black;
-}
+.ps5-logo1 {
+  width: 180px; }
 
-.topNavbar ul:first-child a:first-child {
-    padding: 1rem;
-}
+.playstation-container {
+  background-color: #eeeeee;
+  color: black; }
+  .playstation-container h1 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h2 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h3 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h4 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h5 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h6 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
 
-/* =====================================
-ANCHOR  Sub-menu
-======================================*/
-.topNavbar ul:last-child {
-    display: none;
-    background-color: white;
-    height: 100vh;
-    left: 0px;
-    position: absolute;
-    top: 68px;
-    width: 20rem;
-    padding-left: 0px;
-}
-@media (max-width: 390px) {
-    .topNavbar ul:last-child { 
-        width: 15rem;
-    }
-}
+.playstation-container__title {
+  font-size: 3rem; }
+  @media (max-width: 767px) {
+    .playstation-container__title {
+      font-size: 2.5rem; } }
+  @media (max-width: 360px) {
+    .playstation-container__title {
+      font-size: 1.8rem; } }
 
-.topNavbar ul:last-child a:last-child {
-    padding: 1.5rem;
-}
+.playstation-container__video-container {
+  width: 800px;
+  margin: 0px auto; }
 
-.topNavbar li:first-child:hover ul:last-child {
-    display: block;
-    animation: slideInLeft;
-    animation-duration: 0.5s;
-}
+#ps5-games-slider .slick-prev:before, #ps5-games-slider .slick-next:before {
+  color: black; }
 
-.topNavbar ul:last-child a {
-    color: black;
-    font-size: 1.3rem;
-}
+.ps5-comparison {
+  justify-content: center;
+  min-height: 660px; }
+  .ps5-comparison .ps5-comparison__image {
+    width: 100%; }
+    @media (max-width: 767px) {
+      .ps5-comparison .ps5-comparison__image {
+        width: 50%; } }
+  .ps5-comparison .ps5-comparison__text {
+    text-align: center; }
 
-.topNavbar ul:last-child li {
-    background-color: white;
-    border-bottom: transparent 1px solid;
-}
+.ps5-game__header {
+  max-height: 600px;
+  overflow: hidden; }
+  @media (max-width: 360px) {
+    .ps5-game__header {
+      max-height: 320px; } }
 
-.topNavbar ul:last-child li:hover {
-    background-color: rgb(206, 206, 206);
-    border-bottom: black 1px solid;
-}
-/* =====================================
-!SECTION End: Nav
-======================================*/
-.halo_background {
-    background-image: url(../images/backgrounds/halo.jpg);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
+.ps5-game__mainimg {
+  width: 100%; }
 
-.freefire_background {
-    background-image: url(../images/backgrounds/free-fire.jpg);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
+.ps5-game__title {
+  position: absolute;
+  top: 85%;
+  left: 12px;
+  border-bottom: 0px !important;
+  font-size: 4rem; }
+  .ps5-game__title small {
+    font-size: 1.5rem; }
 
-.doom_background {
-    background-image: url(../images/backgrounds/eternal-1.jpg);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
 
-.cyberpunk_background {
-    background-image: url(../images/backgrounds/cyberpunk2077.jpg);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
 
-.cod_background {
-    background-image: url(../images/backgrounds/cod-wz.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-@media (max-width: 1024px) {
-    .cod_background {
-        background-image: url(../images/backgrounds/mobile-cod.jpg);
-    }
-}
+.capitalize {
+  text-transform: capitalize; }
 
-.bgMainBlack {
-    background-color: var(--main-black);
-}
+.justified {
+  text-align: justify; }
 
-.topBanner img {
-    width: 100%;
-}
+.font-jura {
+  font-family: "Jura"; }
 
-.nav-item a {
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.topheader {
+  position: sticky;
+  top: 0px;
+  z-index: 9999; }
+  .topheader a:link,
+  .topheader a:visited,
+  .topheader a:active {
+    text-decoration: none; }
+  .topheader .topheader__nav {
+    background-color: #1D1D1D;
+    box-shadow: 0px 1px 8px #EB3136; }
+    .topheader .topheader__nav .topheader__item {
+      background-color: #111111;
+      font-family: "Jura";
+      font-size: 1.5rem; }
+      .topheader .topheader__nav .topheader__item a {
+        padding: 1rem;
+        color: white; }
+      .topheader .topheader__nav .topheader__item .topheader__submenu {
+        display: none;
+        background-color: white;
+        height: 100vh;
+        left: 0px;
+        position: absolute;
+        top: 68px;
+        width: 20rem;
+        padding-left: 0px; }
+        .topheader .topheader__nav .topheader__item .topheader__submenu .topheader__submenu-item {
+          background-color: white;
+          border-bottom: transparent 1px solid; }
+          .topheader .topheader__nav .topheader__item .topheader__submenu .topheader__submenu-item a {
+            color: black;
+            font-size: 1.3rem; }
+        .topheader .topheader__nav .topheader__item .topheader__submenu .topheader__submenu-item:hover {
+          background-color: #cecece;
+          border-bottom: black 1px solid; }
+      @media (max-width: 290px) {
+        .topheader .topheader__nav .topheader__item .topheader__submenu {
+          width: 14rem; } }
+      @media (max-width: 390px) {
+        .topheader .topheader__nav .topheader__item .topheader__submenu {
+          width: 15rem; } }
+    .topheader .topheader__nav .topheader__item:hover .topheader__submenu {
+      display: block;
+      animation: slideInLeft;
+      animation-duration: 0.5s; }
+  .topheader .topheader__logo {
+    color: white; }
+    .topheader .topheader__logo h1 {
+      font-family: "Quantico Bold";
+      margin: 0px; }
+
+.mainblock--cod {
+  background-image: url(../images/backgrounds/cod-wz.jpg);
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 1024px) {
+    .mainblock--cod {
+      background-image: url(../images/backgrounds/mobile-cod.jpg); } }
+
+.mainblock--halo {
+  background-image: url(../images/backgrounds/halo.jpg); }
+
+.mainblock--freefire {
+  background-image: url(../images/backgrounds/free-fire.jpg); }
+
+.mainblock--cyberpunk {
+  background-image: url(../images/backgrounds/cyberpunk2077.jpg); }
+
+.mainblock--doom {
+  background-image: url(../images/backgrounds/eternal-1.jpg); }
+
+.mainblock {
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+  .mainblock .mainblock__content {
+    background-color: #1D1D1D;
+    border-radius: 5px;
     color: white;
-    font-family: 'Jura', sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 1rem; }
+    .mainblock .mainblock__content h1, .mainblock .mainblock__content h2, .mainblock .mainblock__content h3 {
+      padding-bottom: 5px;
+      border-bottom: 2px solid #EB3136;
+      font-family: "Jura"; }
+  @media (max-width: 575px) {
+    .mainblock .mainblock__content {
+      border-radius: 0px; } }
 
-.outstandingNewsCard {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 22rem;
-    overflow: hidden;
-}
+.full-width-container {
+  margin-left: -12px;
+  margin-right: -12px; }
 
-.overflow-hidden {
-    overflow: hidden;   
-}
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
 
-.outstandingNewsCard img {
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.justified {
+  text-align: justify; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.mainfooter {
+  background-color: #4A4A4A;
+  height: 100%;
+  padding: 3rem 4rem 4rem 4rem;
+  clear: both;
+  position: relative;
+  margin-top: auto; }
+  .mainfooter .mainfooter__column h1, .mainfooter .mainfooter__column h2, .mainfooter .mainfooter__column h3 {
+    font-family: "Quantico Bold"; }
+  .mainfooter .mainfooter__column h4 {
+    font-family: "Jura";
+    font-weight: 600; }
+  .mainfooter .mainfooter__column a {
+    text-decoration: none; }
+  .mainfooter .mainfooter__column ul {
+    list-style: square; }
+    .mainfooter .mainfooter__column ul li a:hover {
+      color: #ccc;
+      text-decoration: underline; }
+  .mainfooter .mainfooter__social-icon {
+    font-size: 2rem;
+    color: white; }
+
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
+
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.justified {
+  text-align: justify; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.slick-gallery .slick-gallery__item {
+  margin: 5px; }
+  .slick-gallery .slick-gallery__item img {
+    width: 100%; }
+
+.slick-gallery--captions .slick-gallery__item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 22rem;
+  overflow: hidden; }
+  .slick-gallery--captions .slick-gallery__item a {
+    color: white; }
+  .slick-gallery--captions .slick-gallery__item a:hover {
+    color: #ccc; }
+  .slick-gallery--captions .slick-gallery__item p {
     width: 100%;
-    transition: transform 1s;
-    overflow: hidden;
-
-}
-
-.outstandingNewsCard a {
-    color: white;
-}
-
-.outstandingNewsCard a:hover {
-    color: #ccc;
-}
-
-.outstandingNewsCard a:hover img {
-    transform: scale(1.1,1.1);
-}
-
-/* .outstandingNewsCard p {
+    font-family: "Jura";
     margin-bottom: 0px;
     padding: 10px;
     position: absolute;
     bottom: 0px;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(253,187,45,0) 100%);
-} */
+    background: black;
+    background: linear-gradient(0deg, black 8%, rgba(253, 187, 45, 0) 100%); }
 
-.checkedStar {
-    color: gold;
-}
+.slick-gallery--zoom .slick-gallery__item img {
+  transition: transform 1s; }
 
-.mainFooter {
-    background-color: var(--main-grey);
-    height: 100%;
-    padding: 3rem 4rem 4rem 4rem;
-    clear: both;
-    position: relative;
-    margin-top: auto;
-}
+.slick-gallery--zoom .slick-gallery__item a:hover img {
+  transform: scale(1.1, 1.1); }
 
-.mainFooter a:link, a:visited, a:active {
-    text-decoration: none;
-}
+.responsive-yt-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0px;
+  overflow: hidden; }
+  .responsive-yt-iframe iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
 
-.dateFilterList {
-    list-style: none;
-}
+.responsive-yt-iframe--slick {
+  padding-bottom: 10%;
+  padding-top: 30px; }
 
-.dateFilterList ul {
-    list-style: square;
-    list-style-position: inside;
-}
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
 
-.dateFilterList a {
-    color: white;
-    font-family: 'Jura', sans-serif;
-}
-
-.stickyList {
-    position: sticky;
-    top: 70px;
-}
-
-.newsBodyColumn article {
-    background-color: var(--main-grey);
-    border-radius: 5px;
-}
-
-.socialIcons{
-    font-size: 2rem;
-    color: white;
-}
-
-.newsBodyColumn article footer a:hover{
-    color: var(--main-red);
-}
-
-.pDate {
-    font-style: italic;
-    text-transform: capitalize;
-}
-
-.fontJura {
-    font-family: 'Jura', sans-serif;
-}
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
 
 .capitalize {
-    text-transform: capitalize;
-}
+  text-transform: capitalize; }
 
-.listNone {
-    list-style: none;
-}
+.justified {
+  text-align: justify; }
 
-.listSquare {
-    list-style: square;
-}
+.font-jura {
+  font-family: "Jura"; }
 
-.listInside{
-    list-style-position: inside;
-}
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
 
-.bgMainGrey {
-    background-color: var(--main-grey);
-}
+h1 {
+  font-family: "Jura"; }
 
-/* ANCHOR Border radius los contenedores*/
-.containerBorderRadius {
-    border-radius: 5px;
-}
-@media (max-width: 575px) {
-    .containerBorderRadius {
-        border-radius: 0px;
-    }
-}
+h2 {
+  font-family: "Jura"; }
 
-.newsImages {
-    max-width: 600px;
-    border-radius: 5px;
-}
+h3 {
+  font-family: "Jura"; }
 
-hr {
-    display: block; height: 1px;
-    border: 0; border-top: 1px solid #ccc;
-    margin: 1em 0; padding: 0
-}
+h4 {
+  font-family: "Jura"; }
 
-.navSliderItem {
-    height: 120px;
-    position: relative;
-    overflow: hidden;
-}
-.navSliderItem img {
-    width: inherit;
-}
+h5 {
+  font-family: "Jura"; }
 
-.pointer {
-    cursor: pointer;
-}
+h6 {
+  font-family: "Jura"; }
 
+.breadcrumb-custom-block {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  font-family: "Jura";
+  background: #4a4a4a;
+  background: linear-gradient(260deg, #4a4a4a 8%, #1d1d1d 100%); }
+  .breadcrumb-custom-block .breadcrumb-custom-block__ol {
+    margin-bottom: 0px; }
+    .breadcrumb-custom-block .breadcrumb-custom-block__ol .breadcrumb-custom-block__item {
+      font-size: 1.2rem; }
+      .breadcrumb-custom-block .breadcrumb-custom-block__ol .breadcrumb-custom-block__item a {
+        color: white; }
+        .breadcrumb-custom-block .breadcrumb-custom-block__ol .breadcrumb-custom-block__item a:hover {
+          color: #EB3136; }
 
-.red-line {
-    border: 1px var(--main-red) solid;
-    width: 100%;
-}
+.horizontal-card {
+  transition: box-shadow 0.5s;
+  border-radius: 0px;
+  background-color: #111111; }
+  .horizontal-card:hover {
+    box-shadow: 0px 1px 8px #EB3136; }
+  .horizontal-card .horizontal-card__image {
+    border-radius: 0px; }
 
-.bgMainRed {
-    background-color: var(--main-red);
-}
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
 
-.breadcrumbContainer {
-    background: rgb(74,74,74);
-    background: linear-gradient(260deg, rgba(74,74,74,1) 8%, rgba(29,29,29,1) 100%);
-}
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
 
-/*================================
-SECTION Boostrap Custom 
-================================*/
+.capitalize {
+  text-transform: capitalize; }
 
-/* ANCHOR comienzo nav-pills */
-.nav-pills .nav-link {
+.justified {
+  text-align: justify; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.nav-pills {
+  font-family: "Jura"; }
+  .nav-pills .nav-link {
     color: #fff;
-    font-size: 1.2rem;
-}
-
-.nav-pills .nav-link:hover {
-    color: var(--main-red);
-}
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    font-size: 1.2rem; }
+    .nav-pills .nav-link:hover {
+      color: #EB3136; }
+  .nav-pills .nav-link--playstation {
+    color: black;
+    font-size: 1.2rem; }
+    .nav-pills .nav-link--playstation:hover {
+      color: #006FCD; }
+  .nav-pills .nav-link--psnav {
     color: #fff;
-    background-color: var(--main-red);
-}
-/* ANCHOR final nav-pills */
+    font-size: 1.2rem; }
+    .nav-pills .nav-link--psnav:hover {
+      color: #006FCD; }
+  .nav-pills .nav-link--xbox {
+    color: #fff;
+    font-size: 1.2rem; }
+    .nav-pills .nav-link--xbox:hover {
+      color: #017918; }
+  .nav-pills .nav-link--nintendo {
+    color: #fff;
+    font-size: 1.2rem; }
+    .nav-pills .nav-link--nintendo:hover {
+      color: #E80015; }
+  .nav-pills .nav-link.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #EB3136; }
+  .nav-pills .nav-link--playstation.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #006FCD; }
+  .nav-pills .nav-link--psnav.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #006FCD; }
+  .nav-pills .nav-link--xbox.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #017918; }
+  .nav-pills .nav-link--nintendo.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #E80015; }
 
-/* ANCHOR Comienzo accordion */
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
 
-.accordion-body {
-    padding: 1rem 0rem;
-}
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
 
-.accordion-body, .accordion button {
-    color: white;
-}
+.capitalize {
+  text-transform: capitalize; }
 
-.accordion-button:not(.collapsed) {
-    color: white;
-    background-color: #c60f48;
-}
+.justified {
+  text-align: justify; }
 
-.accordion-button:focus {
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.accordion h1,
+.accordion h2,
+.accordion h3 {
+  border-bottom: 0px !important; }
+
+.accordion .accordion-body {
+  color: white;
+  padding: 1rem 0rem; }
+
+.accordion .accordion-button {
+  color: white;
+  text-align: left;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.53); }
+  @media (max-width: 767px) {
+    .accordion .accordion-button {
+      text-align: center; } }
+  .accordion .accordion-button:focus {
     z-index: 3;
     border-color: #830c32;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(130 15 65);
-}
-
-.accordion-button {
-    border: 1px solid rgb(255 255 255 / 46%);
-}
-
-.accordion-button:not(.collapsed)::after {
+    box-shadow: 0 0 0 0.25rem #820f41; }
+  .accordion .accordion-button::after {
+    background-image: url(../images/svg/chevron-down-solid.svg); }
+  .accordion .accordion-button:not(.collapsed)::after {
     background-image: url(../images/svg/chevron-down-solid.svg);
-    transform: rotate(180deg);
-}
-.accordion-button::after {
-    background-image: url(../images/svg/chevron-down-solid.svg);
-}
+    transform: rotate(180deg); }
 
-.accordion button {
-    text-align: left;
-}
+.accordion .accordion-button:not(.collapsed) {
+  background-color: #c60f48; }
 
-@media (max-width:991px ) {
-    .accordion button {
-        text-align: center;
-    }
-}
+.banner-with-logo {
+  position: relative; }
+  .banner-with-logo .banner-with-logo__banner {
+    width: 100% !important; }
+  .banner-with-logo .banner-with-logo__logo {
+    position: absolute;
+    width: 100%;
+    left: 0px; }
 
-/* ANCHOR Final accordion */
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
 
-.breadcrumb {
-    margin-bottom: 0px;
-}
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
 
-.breadcrumb ol {
-    margin-bottom: 0px;
-}
+.capitalize {
+  text-transform: capitalize; }
 
-.breadcrumb-item {
-    font-size: 1.2rem;
-}
+.justified {
+  text-align: justify; }
 
-.breadcrumb-item a {
-    color: white;
-}
+.font-jura {
+  font-family: "Jura"; }
 
-.breadcrumb-item a:hover {
-    color: var(--main-red);
-}
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.news-column {
+  background-color: #111111;
+  margin-bottom: -12px; }
+
+.news-article {
+  background-color: #111111; }
+  @media (max-width: 767px) {
+    .news-article {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  @media (min-width: 767px) and (max-width: 1023px) {
+    .news-article {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  @media (min-width: 1023px) and (max-width: 1360px) {
+    .news-article {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media (min-width: 1360px) {
+    .news-article {
+      padding-left: 8rem;
+      padding-right: 8rem; } }
+
+.news-article__container {
+  background-color: #1D1D1D;
+  padding: 1rem; }
+
+.news-article__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4A4A4A;
+  padding: 0.5rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+.news-article__header {
+  background-color: black;
+  margin-top: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: "Quantico Bold";
+  font-size: 1.5rem; }
+
+.news-article__paragraph {
+  text-align: justify; }
+
+.news-article__socials {
+  font-size: 2rem; }
+
+.date-filter-sticky {
+  position: sticky;
+  top: 80px; }
+
+.tab-header {
+  margin-left: -12px;
+  margin-right: -12px;
+  position: relative;
+  background-image: url(../images/consoles/ps5/header-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 600px;
+  padding: 12px; }
+  .tab-header h1, .tab-header h2, .tab-header h3, .tab-header h4, .tab-header h5, .tab-header h6 {
+    border-bottom: 0px !important; }
+
+.tab-header__title {
+  font-size: 4rem; }
+  @media (max-width: 767px) {
+    .tab-header__title {
+      font-size: 3rem; } }
+  @media (max-width: 360px) {
+    .tab-header__title {
+      font-size: 2rem; } }
+
+.tab-header__subtitle {
+  font-size: 3rem;
+  padding-left: 40px;
+  padding-right: 40px; }
+  @media (max-width: 767px) {
+    .tab-header__subtitle {
+      font-size: 2rem; } }
+  @media (max-width: 360px) {
+    .tab-header__subtitle {
+      font-size: 1.5rem; } }
+
+.pegi-container {
+  display: inline-block;
+  width: 70px; }
+  .pegi-container img {
+    width: 100%; }
+
+.pegi-container--contentdesc img {
+  width: 80%; }
+
+.modal-content {
+  background-color: #1D1D1D; }
+
+.modal-header {
+  border-bottom: 0px; }
+
+.modal-footer {
+  border-top: 0px; }
