@@ -2,6 +2,7 @@
 
 @import './views/pc-views';
 @import './views/index-views';
+@import './views/consoles-views';
 
 @import './layout/header';
 @import './layout/main';
@@ -14,3 +15,7 @@
 @import './components/bs-nav-pills';
 @import './components/bs-accordion';
 @import './components/banner-with-logo';
+@import './components/news-article';
+@import './components/tab-header';
+@import './components/pegi';
+@import './components/bs-modal';

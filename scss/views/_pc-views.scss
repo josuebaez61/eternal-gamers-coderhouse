@@ -6,7 +6,7 @@
     padding-right: 2rem;
 }
 
-.zephyrus-article {
+.asus-article {
     background-image: url(../images/pc/hardware/kv-cover.png);
     background-position: center;
     background-size: cover;
@@ -14,66 +14,30 @@
     max-height: 937px;
     margin-left: -12px;
     margin-right: -12px;
+    @include media(xs) {
+        min-height: 750px;
+        max-height: 750px;
+    }
+
+    @include media(xxs) {
+        min-height: 937px;
+        max-height: 937px;
+    }
 }
 
-.zephyrus-article__image {
+.asus-article__image {
     width: 20%;
-    
     @include media(xs){
         width: 50%;
     }
 }
 
-.news-column {
-    background-color: $main-darkness;
-}
+.asus-article__paragraph {
+    @include media(xs) {
 
-.news-article {
-    background-color: $main-darkness;
-    @include media(xs){
-        padding-left:  1rem;
-        padding-right: 1rem;
+        background-color: rgba(0, 0, 0, 0.761);
+        border-radius: 5px;
     }
-    @include media(sm){
-        padding-left:  1rem;
-        padding-right: 1rem;
-    }
-    @include media(md){
-        padding-left:  2rem;
-        padding-right: 2rem;
-    }
-    @include media(lg){
-        padding-left:  8rem;
-        padding-right: 8rem;
-    }
-}
-
-.news-article__container {
-    background-color: $main-black;
-    padding: 1rem;
-}
-
-.news-article__footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: $main-grey;
-    padding: 0.5rem;
-    margin-bottom: -1rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-}
-
-.news-article__paragraph {
-    text-align: justify;
-}
-
-.news-article__socials {
-    font-size: 2rem;
-}
-
-.date-filter-sticky {
-    position: sticky;
-    top: 80px;
 }
 
 .date-filter-sticky__yearlist {

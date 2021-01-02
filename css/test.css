@@ -8,7 +8,7 @@ body {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-.zephyrus-article {
+.asus-article {
   background-image: url(../images/pc/hardware/kv-cover.png);
   background-position: center;
   background-size: cover;
@@ -16,57 +16,25 @@ body {
   max-height: 937px;
   margin-left: -12px;
   margin-right: -12px; }
+  @media (max-width: 767px) {
+    .asus-article {
+      min-height: 750px;
+      max-height: 750px; } }
+  @media (max-width: 360px) {
+    .asus-article {
+      min-height: 937px;
+      max-height: 937px; } }
 
-.zephyrus-article__image {
+.asus-article__image {
   width: 20%; }
   @media (max-width: 767px) {
-    .zephyrus-article__image {
+    .asus-article__image {
       width: 50%; } }
 
-.news-column {
-  background-color: #111111; }
-
-.news-article {
-  background-color: #111111; }
-  @media (max-width: 767px) {
-    .news-article {
-      padding-left: 1rem;
-      padding-right: 1rem; } }
-  @media (min-width: 767px) and (max-width: 1023px) {
-    .news-article {
-      padding-left: 1rem;
-      padding-right: 1rem; } }
-  @media (min-width: 1023px) and (max-width: 1360px) {
-    .news-article {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-  @media (min-width: 1360px) {
-    .news-article {
-      padding-left: 8rem;
-      padding-right: 8rem; } }
-
-.news-article__container {
-  background-color: #1D1D1D;
-  padding: 1rem; }
-
-.news-article__footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #4A4A4A;
-  padding: 0.5rem;
-  margin-bottom: -1rem;
-  margin-left: -1rem;
-  margin-right: -1rem; }
-
-.news-article__paragraph {
-  text-align: justify; }
-
-.news-article__socials {
-  font-size: 2rem; }
-
-.date-filter-sticky {
-  position: sticky;
-  top: 80px; }
+@media (max-width: 767px) {
+  .asus-article__paragraph {
+    background-color: rgba(0, 0, 0, 0.761);
+    border-radius: 5px; } }
 
 .date-filter-sticky__yearlist {
   list-style: none; }
@@ -79,6 +47,77 @@ body {
   list-style: square;
   list-style-position: inside; }
 
+.ps5-logo1 {
+  width: 180px; }
+
+.playstation-container {
+  background-color: #eeeeee;
+  color: black; }
+  .playstation-container h1 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h2 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h3 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h4 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h5 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+  .playstation-container h6 {
+    border-bottom: 0px !important;
+    padding: 0px !important; }
+
+.playstation-container__title {
+  font-size: 3rem; }
+  @media (max-width: 767px) {
+    .playstation-container__title {
+      font-size: 2.5rem; } }
+  @media (max-width: 360px) {
+    .playstation-container__title {
+      font-size: 1.8rem; } }
+
+.playstation-container__video-container {
+  width: 800px;
+  margin: 0px auto; }
+
+#ps5-games-slider .slick-prev:before, #ps5-games-slider .slick-next:before {
+  color: black; }
+
+.ps5-comparison {
+  justify-content: center;
+  min-height: 660px; }
+  .ps5-comparison .ps5-comparison__image {
+    width: 100%; }
+    @media (max-width: 767px) {
+      .ps5-comparison .ps5-comparison__image {
+        width: 50%; } }
+  .ps5-comparison .ps5-comparison__text {
+    text-align: center; }
+
+.ps5-game__header {
+  max-height: 600px;
+  overflow: hidden; }
+  @media (max-width: 360px) {
+    .ps5-game__header {
+      max-height: 320px; } }
+
+.ps5-game__mainimg {
+  width: 100%; }
+
+.ps5-game__title {
+  position: absolute;
+  top: 85%;
+  left: 12px;
+  border-bottom: 0px !important;
+  font-size: 4rem; }
+  .ps5-game__title small {
+    font-size: 1.5rem; }
+
 @font-face {
   font-family: "Quantico Bold";
   src: url(../fonts/Quantico-Bold.ttf); }
@@ -89,6 +128,9 @@ body {
 
 .capitalize {
   text-transform: capitalize; }
+
+.justified {
+  text-align: justify; }
 
 .font-jura {
   font-family: "Jura"; }
@@ -219,6 +261,9 @@ h6 {
 .capitalize {
   text-transform: capitalize; }
 
+.justified {
+  text-align: justify; }
+
 .font-jura {
   font-family: "Jura"; }
 
@@ -277,6 +322,9 @@ h6 {
 .capitalize {
   text-transform: capitalize; }
 
+.justified {
+  text-align: justify; }
+
 .font-jura {
   font-family: "Jura"; }
 
@@ -317,6 +365,7 @@ h6 {
   .slick-gallery--captions .slick-gallery__item a:hover {
     color: #ccc; }
   .slick-gallery--captions .slick-gallery__item p {
+    width: 100%;
     font-family: "Jura";
     margin-bottom: 0px;
     padding: 10px;
@@ -357,6 +406,9 @@ h6 {
 
 .capitalize {
   text-transform: capitalize; }
+
+.justified {
+  text-align: justify; }
 
 .font-jura {
   font-family: "Jura"; }
@@ -418,6 +470,9 @@ h6 {
 .capitalize {
   text-transform: capitalize; }
 
+.justified {
+  text-align: justify; }
+
 .font-jura {
   font-family: "Jura"; }
 
@@ -449,9 +504,41 @@ h6 {
     font-size: 1.2rem; }
     .nav-pills .nav-link:hover {
       color: #EB3136; }
+  .nav-pills .nav-link--playstation {
+    color: black;
+    font-size: 1.2rem; }
+    .nav-pills .nav-link--playstation:hover {
+      color: #006FCD; }
+  .nav-pills .nav-link--psnav {
+    color: #fff;
+    font-size: 1.2rem; }
+    .nav-pills .nav-link--psnav:hover {
+      color: #006FCD; }
+  .nav-pills .nav-link--xbox {
+    color: #fff;
+    font-size: 1.2rem; }
+    .nav-pills .nav-link--xbox:hover {
+      color: #017918; }
+  .nav-pills .nav-link--nintendo {
+    color: #fff;
+    font-size: 1.2rem; }
+    .nav-pills .nav-link--nintendo:hover {
+      color: #E80015; }
   .nav-pills .nav-link.active, .nav-pills .nav-pills .show > .nav-link {
     color: #fff;
     background-color: #EB3136; }
+  .nav-pills .nav-link--playstation.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #006FCD; }
+  .nav-pills .nav-link--psnav.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #006FCD; }
+  .nav-pills .nav-link--xbox.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #017918; }
+  .nav-pills .nav-link--nintendo.active, .nav-pills .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #E80015; }
 
 @font-face {
   font-family: "Quantico Bold";
@@ -463,6 +550,9 @@ h6 {
 
 .capitalize {
   text-transform: capitalize; }
+
+.justified {
+  text-align: justify; }
 
 .font-jura {
   font-family: "Jura"; }
@@ -526,3 +616,148 @@ h6 {
     position: absolute;
     width: 100%;
     left: 0px; }
+
+@font-face {
+  font-family: "Quantico Bold";
+  src: url(../fonts/Quantico-Bold.ttf); }
+
+@font-face {
+  font-family: "Jura";
+  src: url(../fonts/Jura-VariableFont_wght.ttf); }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.justified {
+  text-align: justify; }
+
+.font-jura {
+  font-family: "Jura"; }
+
+.font-quaticoBold {
+  font-family: "Quantico Bold"; }
+
+h1 {
+  font-family: "Jura"; }
+
+h2 {
+  font-family: "Jura"; }
+
+h3 {
+  font-family: "Jura"; }
+
+h4 {
+  font-family: "Jura"; }
+
+h5 {
+  font-family: "Jura"; }
+
+h6 {
+  font-family: "Jura"; }
+
+.news-column {
+  background-color: #111111;
+  margin-bottom: -12px; }
+
+.news-article {
+  background-color: #111111; }
+  @media (max-width: 767px) {
+    .news-article {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  @media (min-width: 767px) and (max-width: 1023px) {
+    .news-article {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  @media (min-width: 1023px) and (max-width: 1360px) {
+    .news-article {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media (min-width: 1360px) {
+    .news-article {
+      padding-left: 8rem;
+      padding-right: 8rem; } }
+
+.news-article__container {
+  background-color: #1D1D1D;
+  padding: 1rem; }
+
+.news-article__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4A4A4A;
+  padding: 0.5rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+.news-article__header {
+  background-color: black;
+  margin-top: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: "Quantico Bold";
+  font-size: 1.5rem; }
+
+.news-article__paragraph {
+  text-align: justify; }
+
+.news-article__socials {
+  font-size: 2rem; }
+
+.date-filter-sticky {
+  position: sticky;
+  top: 80px; }
+
+.tab-header {
+  margin-left: -12px;
+  margin-right: -12px;
+  position: relative;
+  background-image: url(../images/consoles/ps5/header-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 600px;
+  padding: 12px; }
+  .tab-header h1, .tab-header h2, .tab-header h3, .tab-header h4, .tab-header h5, .tab-header h6 {
+    border-bottom: 0px !important; }
+
+.tab-header__title {
+  font-size: 4rem; }
+  @media (max-width: 767px) {
+    .tab-header__title {
+      font-size: 3rem; } }
+  @media (max-width: 360px) {
+    .tab-header__title {
+      font-size: 2rem; } }
+
+.tab-header__subtitle {
+  font-size: 3rem;
+  padding-left: 40px;
+  padding-right: 40px; }
+  @media (max-width: 767px) {
+    .tab-header__subtitle {
+      font-size: 2rem; } }
+  @media (max-width: 360px) {
+    .tab-header__subtitle {
+      font-size: 1.5rem; } }
+
+.pegi-container {
+  display: inline-block;
+  width: 70px; }
+  .pegi-container img {
+    width: 100%; }
+
+.pegi-container--contentdesc img {
+  width: 80%; }
+
+.modal-content {
+  background-color: #1D1D1D; }
+
+.modal-header {
+  border-bottom: 0px; }
+
+.modal-footer {
+  border-top: 0px; }

@@ -1,0 +1,13 @@
+.pegi-container {
+    display: inline-block;
+    width: 70px;
+    img {
+        width: 100%;
+    }
+}
+
+.pegi-container--contentdesc {
+    img {
+        width: 80%;
+    }
+}

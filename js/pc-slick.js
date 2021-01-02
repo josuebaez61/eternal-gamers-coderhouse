@@ -63,17 +63,6 @@ accordionBodies.forEach( body => {
     })
 });
 
-
-function getHash() {
-    if (window.location.hash) { // NOTE si hay hash...
-        var trigger = document.querySelector(window.location.hash);
-        if ( trigger ) { // NOTE si existe ese elemento...
-            var tab = new bootstrap.Tab(trigger)
-            tab.show()
-        }
-    }
-}
-
 $('#slick-aoe2').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -125,4 +114,18 @@ tabDestacados.addEventListener('hide.bs.tab', () => {
     $('#slick-aoe3').slick('unslick');
 })
 
+function getHash() {
+    if (window.location.hash) { // NOTE si hay hash...
+        var trigger = document.querySelector(window.location.hash);
+        if ( trigger ) { // NOTE si existe ese elemento...
+            var tab = new bootstrap.Tab(trigger)
+            tab.show()
+        }
+    }
+}
+
 getHash();
+
+window.addEventListener('popstate', () => { // NOTE al cambiar el estado del url...
+    getHash();
+});

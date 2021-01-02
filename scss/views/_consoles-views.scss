@@ -1,0 +1,75 @@
+@import "../utilities/mixins";
+
+.ps5-logo1 {
+  width: 180px;
+}
+
+.playstation-container {
+  background-color: #eeeeee;
+  color: black;
+  @include allHeaderText {
+    border-bottom: 0px !important;
+    padding: 0px !important;
+  }
+}
+
+.playstation-container__title {
+  font-size: 3rem;
+  @include media(xs) {
+    font-size: 2.5rem;
+  }
+  @include media(xxs) {
+    font-size: 1.8rem;
+  }
+}
+
+.playstation-container__video-container {
+  width: 800px;
+  margin: 0px auto;
+}
+
+#ps5-games-slider {
+    .slick-prev:before, .slick-next:before  {
+        color: black;
+    }
+}
+
+.ps5-comparison {
+    justify-content: center;
+    min-height: 660px;
+    .ps5-comparison__image {
+      @include media(xs) {
+        width: 50%;
+      }
+    
+      width: 100%;
+    }
+
+    .ps5-comparison__text {
+        text-align: center;
+    }
+}
+
+
+.ps5-game__header {
+  max-height: 600px;
+  @include media(xxs) {
+    max-height: 320px;
+  }
+  overflow: hidden;
+}
+
+.ps5-game__mainimg {
+  width: 100%;
+}
+
+.ps5-game__title {
+  position: absolute;
+  top: 85%;
+  left: 12px;
+  border-bottom: 0px !important;
+  font-size: 4rem;
+  small {
+    font-size: 1.5rem;
+  }
+}

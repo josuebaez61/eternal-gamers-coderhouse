@@ -1,0 +1,66 @@
+@import '../fonts/typo';
+
+.news-column {
+    background-color: $main-darkness;
+    margin-bottom: -12px;
+}
+
+.news-article {
+    background-color: $main-darkness;
+    @include media(xs){
+        padding-left:  1rem;
+        padding-right: 1rem;
+    }
+    @include media(sm){
+        padding-left:  1rem;
+        padding-right: 1rem;
+    }
+    @include media(md){
+        padding-left:  2rem;
+        padding-right: 2rem;
+    }
+    @include media(lg){
+        padding-left:  8rem;
+        padding-right: 8rem;
+    }
+}
+
+.news-article__container {
+    background-color: $main-black;
+    padding: 1rem;
+}
+
+.news-article__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main-grey;
+    padding: 0.5rem;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.news-article__header {
+    background-color: black;
+    margin-top: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: $font-quanticoBold;
+    font-size: 1.5rem;
+}
+
+.news-article__paragraph {
+    text-align: justify;
+}
+
+.news-article__socials {
+    font-size: 2rem;
+}
+
+.date-filter-sticky {
+    position: sticky;
+    top: 80px;
+}

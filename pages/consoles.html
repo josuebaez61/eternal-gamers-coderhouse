@@ -3,43 +3,77 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- SEO meta tags -->
+    <meta name="description" content="Eternal Gamers es un portal de noticias del múndo de los videojuegos.">
+    <meta name="author" content="Josué Baez">
+    <meta name="keywords" content="gamers, videojuegos, noticias, lanzamientos, trailers, consolas, pc, xbox, nintendo">
+
+    <!-- OpenGraph -->
+    <meta property='og:title' content='Eternal Gamers' />
+    <meta property='og:description' content='Portal de noticias y reseñas del mundo gaming.' />
+    <meta property='og:image' content='images/main.png' />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Consolas - Eternal Gamers</title>
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../plugins/slick/slick-theme.css" />
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="../css/test.css">
+    <title>Eternal Gamers | PC</title>
 </head>
 
 <body class="d-flex flex-column">
     <!-- ============================================= -->
     <!-- SECTION Header -->
     <!-- ============================================= -->
-    <header class="stickyHeader">
-        <nav class="navbar navbar-expand-md text-light p-0 topNavbar">
+    <header class="topheader">
+        <nav class="topheader__nav navbar text-light p-0">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="pc.html"><i class="fas fa-bars fa-fw"></i> NAVEGAR</a>
+                <li class="topheader__item nav-item">
+                    <a class="nav-link" href="../index.html"><i class="fas fa-bars fa-fw"></i> <span
+                            class="d-none d-lg-inline">NAVEGAR</span></a>
                     <!-- ANCHOR Sub-menu -->
-                    <ul>
-                        <li>
+                    <ul class="topheader__submenu">
+                        <li class="topheader__submenu-item">
                             <a class="nav-link" href="../index.html"> <i class="fas fa-home fa-fw"></i>
                                 Inicio</a>
                         </li>
-                        <li>
+                        <li class="topheader__submenu-item">
                             <a class="nav-link" href="pc.html"><i class="fas fa-desktop fa-fw"></i> PC</a>
                         </li>
-                        <li>
+                        <li class="topheader__submenu-item">
                             <a class="nav-link" href="consoles.html"><i class="fas fa-gamepad fa-fw"></i>
                                 Consolas</a>
                         </li>
-                        <li>
+                        <li class="topheader__submenu-item">
                             <a class="nav-link" href="mobiles.html"><i class="fas fa-mobile-alt fa-fw"></i>
                                 Móviles</a>
                         </li>
-                        <li>
+                        <li class="topheader__submenu-item">
                             <a class="nav-link" href="contact.html"><i class="far fa-envelope fa-fw"></i></i>
                                 Contacto</a>
                         </li>
@@ -47,8 +81,8 @@
                 </li>
             </ul>
             <!-- ANCHOR logo -->
-            <a class="navbar-brand text-light" href="../index.html" class="ml-3 text-light">
-                <h1 class="d-none d-md-block fontQuanticoBold m-0">ETERNAL GAMERS</h1>
+            <a class="navbar-brand topheader__logo" href="../index.html">
+                <h1 class="fs-4 fs-md-1">ETERNAL GAMERS</h1>
             </a>
         </nav>
     </header>
@@ -56,217 +90,451 @@
     <!-- !SECTION Header -->
     <!-- ============================================= -->
 
-    <main class="halo_background">
-        <div class="container text-light mt-3 pb-3 pt-3 containerBorderRadius bgMainBlack">
-            <div class="row">
-                <div class="col-md-12 topBanner mb-2">
-                    <img src="../images/consoles/banner-logos.jpg" alt="banner">
+    <main class="mainblock mainblock--halo">
+        <div class="mainblock__content container">
+            <!-- ANCHOR breadcrumb -->
+            <div class="d-flex justify-content-end text-end fontJura container breadcrumb-custom-block">
+                <ol class="breadcrumb breadcrumb-custom-block__ol">
+                    <li class="breadcrumb-item breadcrumb-custom-block__item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item breadcrumb-custom-block__item active" aria-current="page">Consolas</li>
+                </ol>
+            </div>
+            <!-- ANCHOR nav-pills-->
+            <nav class="mt-2">
+                <div class="nav nav-pills nav-justified fontJura" id="nav-tab" role="tablist">
+                    <a class="nav-link nav-link--psnav active" id="nav-playstation-tab" data-bs-toggle="tab"
+                        href="#nav-playstation" role="tab" aria-controls="nav-playstation" aria-selected="true"><i
+                            class="fab fa-playstation fa-fw"></i> Playstation</a>
+                    <a class="nav-link nav-link--xbox" id="nav-xbox-tab" data-bs-toggle="tab" href="#nav-xbox"
+                        role="tab" aria-controls="nav-xbox" aria-selected="false"><i class="fab fa-xbox"></i> Xbox</a>
+                    <a class="nav-link nav-link--nintendo" id="nav-nintendo-tab" data-bs-toggle="tab"
+                        href="#nav-nintendo" role="tab" aria-controls="nav-nintendo" aria-selected="false"><i
+                            class="fas fa-gamepad"></i> Nintendo</a>
                 </div>
-
-                <div class="col-md-12">
-                    <ul class="nav nav-tabs mb-2" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="news-tab" data-toggle="tab" href="#news" role="tab"
-                                aria-controls="news" aria-selected="true">Noticias</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false"><i class="fab fa-playstation fa-fw"></i>
-                                Playstation</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false"><i class="fab fa-xbox fa-fw"></i> Xbox</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false"><i class="fas fa-gamepad fa-fw"></i>
-                                Nintendo</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active newsContentTab" id="news" role="tabpanel"
-                            aria-labelledby="news-tab">
-
-                            <div class="row">
-                                <section class="col-md-9 newsBodyColumn">
-                                    <!-- ============================================= -->
-                                    <!-- ANCHOR Article 1 -->
-                                    <!-- ============================================= -->
-                                    <article class="container pt-3 pb-3 mt-3">
-                                        <h2 class="red-underline capitalize">Así es FIFA 21 en la nueva generación de
-                                            consolas
-                                        </h2>
-                                        <p class="text-center"><em>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Vitae, accusamus officiis! Quasi, aspernatur amet? Nobis
-                                                repudiandae ea corporis, quibusdam ipsum quisquam sit ipsam quis error
-                                                magnam! Dolorum officia deleniti voluptate!</em></p>
-                                        <div class="mb-3 text-center">
-                                            <img class="img-fluid newsImages" src="../images/consoles/fifa21.jpeg"
-                                                alt="fifa-21">
+            </nav>
+            <div class="tab-content" id="consolesTabs">
+                <!-- ================================================================================================== -->
+                <!--  SECTION Playstation -->
+                <!-- ================================================================================================== -->
+                <div class="tab-pane fade show active" id="nav-playstation" role="tabpanel"
+                    aria-labelledby="nav-playstation">
+                    <div class="mt-2">
+                        <header class="row g-0 tab-header align-content-center">
+                            <div class="animate__animated animate__fadeIn">
+                                <div class="row">
+                                    <div class="col-md-8 text-center align-self-center">
+                                        <img class="ps5-logo1 mt-3 mt-lg-0" src="../images/consoles/ps5/ps5-logo1.png"
+                                            alt="">
+                                        <div class="top-header__img-container mt-3 mt-lg-0 d-md-none">
+                                            <img class="w-100" src="../images/consoles/ps5/ps5-render.png"
+                                                alt="playstation5">
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam
-                                            impedit atque optio natus accusantium nulla officiis. Praesentium magni
-                                            vitae nobis sunt rerum quam laudantium necessitatibus officiis porro,
-                                            expedita magnam!
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum tempore
-                                            consequuntur, itaque eaque culpa tempora sit illo. Perferendis labore
-                                            cupiditate libero alias sint laboriosam aliquam odio itaque dolorem eos!</p>
-                                        <div class="text-center">
-                                            <iframe width="560" height="315"
-                                                src="https://www.youtube.com/embed/sSUx54kmUD8" frameborder="0"
+                                        <h2 class="tab-header__title">PlayStation®5</h2>
+                                        <p class="tab-header__subtitle">
+                                            Lanzamiento: 4 de Diciembre del 2020
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 top-header__img-container d-none d-md-block">
+                                        <img class="w-100" src="../images/consoles/ps5/ps5-render.png"
+                                            alt="playstation5">
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <section class="playstation-container full-width-container">
+                            <div class="container pt-1 pb-5">
+                                <article class="row text-center text-dark">
+                                    <div class="col-12">
+                                        <h3 class="playstation-container__title mt-5 mb-5">Trailer de Lanzamiento</h3>
+                                        <!-- <div class="playstation-container__video-container"> -->
+                                        <div class="responsive-yt-iframe">
+                                            <iframe src="https://www.youtube.com/embed/t12x7k_oecc" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                 allowfullscreen></iframe>
                                         </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsum
-                                            perferendis dolores corrupti, eum inventore ratione eos quos expedita id
-                                            esse obcaecati excepturi, saepe similique iure quis repellendus impedit
-                                            error.</p>
-                                        <footer class="d-flex justify-content-between">
-                                            <div>
-                                                <span class="pDate d-block text-left text-muted">12 de diciembre de
-                                                    2020</span>
-                                            </div>
+                                        <!-- </div> -->
+                                    </div>
+                                </article>
 
-                                            <div class="text-right">
-                                                <span class="fontJura">COMPARTIR </span>
-                                                <div class="socialIcons">
-                                                    <a class="text-light" href="#"><i class="fa fa-facebook fa-fw"
-                                                            aria-hidden="true"></i></a>
-                                                    <a class="text-light" href="#"><i class="fa fa-twitter fa-fw"
-                                                            aria-hidden="true"></i></a>
-                                                    <a class="text-light" href="#"><i class="fa fa-whatsapp fa-fw"
-                                                            aria-hidden="true"></i></a>
-                                                </div>
-                                            </div>
-                                        </footer>
-                                    </article>
-                                    <!-- ============================================= -->
-                                    <!-- ANCHOR Article 2 -->
-                                    <!-- ============================================= -->
-                                    <article class="container pt-3 pb-3 mt-3">
-                                        <h2 class="red-underline capitalize">Nintendo busca ser el mejor regalo para
-                                            estas navidades</h2>
-                                        <p class="text-center"><em>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Vitae, accusamus officiis! Quasi, aspernatur amet? Nobis
-                                                repudiandae ea corporis, quibusdam ipsum quisquam sit ipsam quis error
-                                                magnam! Dolorum officia deleniti voluptate!</em></p>
-                                        <div class="mb-3 text-center">
-                                            <img class="img-fluid newsImages" src="../images/consoles/nintendo-news.jpg"
-                                                alt="doom-switch">
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam
-                                            impedit atque optio natus accusantium nulla officiis. Praesentium magni
-                                            vitae nobis sunt rerum quam laudantium necessitatibus officiis porro,
-                                            expedita magnam!
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum tempore
-                                            consequuntur, itaque eaque culpa tempora sit illo. Perferendis labore
-                                            cupiditate libero alias sint laboriosam aliquam odio itaque dolorem eos!</p>
-                                        <div class="text-center">
-                                            <iframe width="560" height="315"
-                                                src="https://www.youtube.com/embed/AEVqfQx4las" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                        <div>
-                                            <h3>Llegarán ediciones especiales para Diciembre
-                                            </h3>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
-                                                quibusdam
-                                                assumenda ab soluta quia, possimus nulla unde sunt dicta, amet
-                                                ex at
-                                                corporis ut, non quisquam incidunt architecto velit vitae. Lorem
-                                                ipsum
-                                                dolor, sit amet consectetur adipisicing elit. Eos eius quaerat
-                                                assumenda
-                                                maiores ratione necessitatibus sint magni est molestias, tenetur
-                                                atque
-                                                aliquid soluta sit tempore quis. Et eligendi veritatis
-                                                repudiandae?</p>
-                                        </div>
-                                        <footer class="d-flex justify-content-between">
-                                            <div>
-                                                <span class="pDate d-block text-left text-muted">12 de diciembre
-                                                    de
-                                                    2020</span>
-                                            </div>
+                                <article class="row">
+                                    <p class="col-12 text-center p-5 mt-2"><em>
+                                            Experimenta una velocidad sorprendente con una SSD de velocidad
+                                            ultrarrápida, una inmersión más profunda con soporte para respuesta háptica,
+                                            gatillos adaptables y audio 3D*, además de una generación completamente
+                                            nueva de juegos de PlayStation®.
 
-                                            <div class="text-right">
-                                                <span class="fontJura">COMPARTIR </span>
-                                                <div class="socialIcons">
-                                                    <a class="text-light" href="#"><i class="fa fa-facebook fa-fw"
-                                                            aria-hidden="true"></i></a>
-                                                    <a class="text-light" href="#"><i class="fa fa-twitter fa-fw"
-                                                            aria-hidden="true"></i></a>
-                                                    <a class="text-light" href="#"><i class="fa fa-whatsapp fa-fw"
-                                                            aria-hidden="true"></i></a>
-                                                </div>
-                                            </div>
-                                        </footer>
-                                    </article>
-                                </section>
-                                <aside class="col-md-3">
-                                    <div class="stickyList">
-                                        <h3 class="red-underline">Filtrar</h3>
-                                        <div class="container">
-                                            <ul class="dateFilterList">
-                                                <li>
-                                                    <a class="text-light" href="#">2020</a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#">Enero</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Febrero</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Marzo</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Abril</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Mayo</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Junio</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Julio</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Agosto</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Septiembre</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Octubre</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Noviembre</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Diciembre</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            * Audio en 3D con audífonos compatibles
+                                        </em></p>
+                                </article>
+
+                                <article>
+                                    <div class="d-none d-md-block">
+                                        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab"
+                                            role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link nav-link--playstation active" id="pills-ps5-tab"
+                                                    data-bs-toggle="pill" href="#pills-ps5" role="tab"
+                                                    aria-controls="pills-ps5" aria-selected="true">Consola PS5</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link nav-link--playstation" id="pills-ps5digital-tab"
+                                                    data-bs-toggle="pill" href="#pills-ps5digital" role="tab"
+                                                    aria-controls="pills-ps5digital" aria-selected="false">PS5
+                                                    edición digital</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-md-none p-2">
+                                        <div class="row nav nav-pills" id="v-pills-tab" role="tablist"
+                                            aria-orientation="vertical">
+                                            <a class="nav-link nav-link--playstation active" id="pills-ps5mobile-tab"
+                                                data-bs-toggle="pill" href="#pills-ps5" role="tab"
+                                                aria-controls="pills-ps5" aria-selected="true">Consola PS5</a>
+                                            <a class="nav-link nav-link--playstation" id="pills-ps5digitalmobile-tab"
+                                                data-bs-toggle="pill" href="#pills-ps5digital" role="tab"
+                                                aria-controls="pills-ps5digital" aria-selected="false">PS5
+                                                edición digital</a>
                                         </div>
                                     </div>
-                                </aside>
-                            </div>
-                        </div>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-ps5" role="tabpanel"
+                                            aria-labelledby="pills-ps5-tab">
 
-                        <!-- ================================================================================================== -->
-                        <!--  SECTION Reseñas -->
-                        <!-- ================================================================================================== -->
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                        <!-- ================================================================================================== -->
-                        <!--  !SECTION Reseñas -->
-                        <!-- ================================================================================================== -->
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                                            <div class="row ps5-comparison">
+                                                <div
+                                                    class="col-md-5 ps5-comparison__text text-center text-md-start order-1 order-md-0">
+                                                    <h4>Más características de la consola PS5</h4>
+
+                                                    <h5><strong>Retrocompatibilidad</strong></h5>
+                                                    <p>Disfruta de un catálogo retrocompatible de juegos de PS4™ en
+                                                        tu consola PS5.</p>
+
+                                                    <h5><strong>Mejoras para juegos</strong></h5>
+                                                    <p>
+                                                        Disfruta de frecuencias de imágenes más rápidas y fluidas en
+                                                        juegos digitales específicos de PS4 y PS VR.
+                                                    </p>
+
+                                                    <h5><strong>Actualiza tus juegos digitales de PS4 a versiones
+                                                            digitales de PS5</strong></h5>
+                                                    <p>
+                                                        La consola PS5 edición digital les ofrece a los
+                                                        distribuidores de juegos la capacidad de permitirles a los
+                                                        jugadores actualizar las versiones digitales de sus juegos
+                                                        de PS4 a juegos digitales de PS54.
+                                                    </p>
+
+                                                    <h5><strong>Integración de PlayStation VR</strong></h5>
+                                                    <p>Conecta tu PlayStation VR a tu consola PS5 edición digital
+                                                        para disfrutar de los juegos digitales de PS VR compatibles.
+                                                        Para configurar tu PS VR con la PS5 edición digital,
+                                                        necesitarás la PlayStation Camera2 para PS4 y un adaptador
+                                                        para PlayStation Camera (no se requiere una compra).</p>
+                                                </div>
+                                                <div class="col-md-4 order-0 order-lg-1 text-center">
+                                                    <img class="ps5-comparison__image"
+                                                        src="../images/consoles/ps5/ps5-render.png" alt="playstation5">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="pills-ps5digital" role="tabpanel"
+                                            aria-labelledby="pills-ps5digital-tab">
+                                            <div class="row ps5-comparison">
+                                                <div class="col-md-4 text-center">
+                                                    <img class="ps5-comparison__image"
+                                                        src="../images/consoles/ps5/ps5digital-render.png"
+                                                        alt="playstation5">
+                                                </div>
+                                                <div class="col-md-5 ps5-comparison__text text-center text-md-start">
+                                                    <h4>Más características de la consola PS5 edición digital</h4>
+                                                    <p>La PS5 edición digital es una versión completamente digital
+                                                        de la consola PS5 que no trae unidad de disco. Inicia sesión
+                                                        en tu cuenta para PlayStation Network y ve a
+                                                        PlayStation®Store para comprar y descargar juegos3.</p>
+
+                                                    <h5><strong>Retrocompatibilidad</strong></h5>
+                                                    <p>Disfruta de un catálogo retrocompatible de juegos digitales
+                                                        de PS4 en tu PS5 edición digital.</p>
+
+                                                    <h5><strong>Mejoras para juegos</strong></h5>
+                                                    <p>
+                                                        Disfruta de frecuencias de imágenes más rápidas y fluidas en
+                                                        juegos digitales específicos de PS4 y PS VR.
+                                                    </p>
+
+                                                    <h5><strong>Actualiza tus juegos digitales de PS4 a versiones
+                                                            digitales de PS5</strong></h5>
+                                                    <p>
+                                                        La consola PS5 edición digital les ofrece a los
+                                                        distribuidores de juegos la capacidad de permitirles a los
+                                                        jugadores actualizar las versiones digitales de sus juegos
+                                                        de PS4 a juegos digitales de PS54.
+                                                    </p>
+
+                                                    <h5><strong>Integración de PlayStation VR</strong></h5>
+                                                    <p>Conecta tu PlayStation VR a tu consola PS5 edición digital
+                                                        para disfrutar de los juegos digitales de PS VR compatibles.
+                                                        Para configurar tu PS VR con la PS5 edición digital,
+                                                        necesitarás la PlayStation Camera2 para PS4 y un adaptador
+                                                        para PlayStation Camera (no se requiere una compra).</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+
+                                <article class="px-5 mt-2">
+                                    <h3 class="playstation-container__title mt-5 mb-5 text-center">Los Mejores Juegos
+                                    </h3>
+
+                                    <div class="slick-gallery slick-gallery--zoom slick-gallery--captions"
+                                        id="ps5-games-slider">
+                                        <div class="slick-gallery__item">
+                                            <a href="./playstation/demonssouls.html">
+                                                <img src="../images/consoles/ps5/games/demonssouls.jpg"
+                                                    alt="Demon's Souls">
+                                                <p>Demon's Souls</p>
+                                            </a>
+                                        </div>
+                                        <div class="slick-gallery__item">
+                                            <a href="./playstation/thelastofus2.html">
+                                                <img src="../images/consoles/ps5/games/thelastofus2.png"
+                                                    alt="The Last of Us II">
+                                                <p>The Last of Us Parte II</p>
+                                            </a>
+                                        </div>
+                                        <div class="slick-gallery__item">
+                                            <a href="./playstation/spiderman.html">
+                                                <img src="../images/consoles/ps5/games/spiderman.jpg"
+                                                    alt="Marvel's Spider-Man: Miles Morales">
+                                                <p>Marvel's Spider-Man: Miles Morales</p>
+                                            </a>
+                                        </div>
+                                        <div class="slick-gallery__item">
+                                            <a href="./playstation/granturismo.html">
+                                                <img src="../images/consoles/ps5/games/turismo7.jpg"
+                                                    alt="Gran Turismo™ 7">
+                                                <p>Gran Turismo™ 7</p>
+                                            </a>
+                                        </div>
+                                        <div class="slick-gallery__item">
+                                            <a href="./playstation/sackboy.html">
+                                                <img src="../images/consoles/ps5/games/sackboy.jpg"
+                                                    alt="Sackboy: La Gran Aventura">
+                                                <p>Sackboy: La Gran Aventura</p>
+                                            </a>
+                                        </div>
+                                        <div class="slick-gallery__item">
+                                            <a href="./playstation/godfall.html">
+                                                <img src="../images/consoles/ps5/games/godfall.jpg" alt="Godfall">
+                                                <p>Godfall</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
                     </div>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!--  !SECTION End: Playstation -->
+                <!-- ================================================================================================== -->
+                <!-- ================================================================================================== -->
+                <!--  SECTION Xbox -->
+                <!-- ================================================================================================== -->
+                <div class="tab-pane fade" id="nav-xbox" role="tabpanel" aria-labelledby="nav-xbox">
+        
+                    <div class="row mt-3">
+                        <section class="col-md-12 col-lg-9 news-column">
+                            <!-- ============================================= -->
+                            <!-- ANCHOR Article 1 -->
+                            <!-- ============================================= -->
+                            <article class="news-article pt-3 pb-3 mt-2">
+                                <div class="news-article__container">
+                                    <header class="news-article__header pt-1 pb-1">
+                                        ASSASSIN'S CREED VALHALLA
+                                    </header>
+                                    <h2 class="capitalize mt-2">Assassin's Creed Valhalla lidera las ventas de Navidad
+                                        en UK, con un Cyberpunk 2077 que cae al tercer puesto
+                                    </h2>
+                                    <p class="text-center"><em>Las ventas físicas de lo nuevo de CD Projekt RED
+                                            descienden en un 80% tras su estreno.</em></p>
+                                    <div class="mb-3 text-center">
+                                        <img class="img-fluid newsImages" src="../images/pc/assassinscreed.jpg" alt="cyberpunk">
+                                    </div>
+                                    <p class="news-article__paragraph">Como cada lunes, el grupo GfK (vía Games
+                                        Industry) ofrece los datos de las ventas físicas de videojuegos en Reino Unido.
+                                        Pero no se trata de un lunes cualquiera, ni mucho menos. La Navidad está a la
+                                        vuelta de la esquina, y en estas fechas tan señaladas, a Ubisoft le llenará de
+                                        orgullo y satisfacción conocer que Assassin's Creed Valhalla ha sido el juego
+                                        más vendido de la semana en el país, por encima de todo un superventas, y del
+                                        recientemente estrenado Cyberpunk 2077.
+                                    </p>
+                                    <p class="news-article__paragraph">
+                                        Gracias a los descuentos navideños de Ubisoft, su aventura vikinga de mundo
+                                        abierto ha incrementado las ventas en un 66% semana a semana, lo que la impulsa
+                                        hasta el primer puesto de las listas semanales. Como bien apunta el citado
+                                        medio, esta es la primera vez en la historia que un juego de Ubisoft es el
+                                        número 1 de las navidades en Reino Unido, y es apenas la tercera vez en 15 años
+                                        que la semana previa a la Navidad está liderada por un juego que no sea FIFA o
+                                        Call of Duty.
+                                    </p>
+                                    <div class="responsive-yt-iframe mb-3">
+                                        <iframe src="https://www.youtube.com/embed/ssrNcwxALS4" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div>
+                                        <h4>Es la tercera vez en 15 años que CoD o FIFA no son lo más vendido en Navidad
+                                        </h4>
+                                        <p class="news-article__paragraph">De hecho, el segundo y cuarto puesto de la
+                                            lista están ocupados por Call of Duty Black Ops Cold War y FIFA 21,
+                                            respectivamente. Y Games Industry señala que es la primera vez que un nuevo
+                                            juego de la subsaga "Black Ops" no lidera la Navidad en su año de debut.
+                                            Pero vayamos un momento a la tercera posición. Cyberpunk 2077 desciende dos
+                                            puestos en las listas tras una bajada del 80% en las ventas físicas con
+                                            respecto a la semana del estreno. Es un descenso habitual en los títulos
+                                            para un jugador con formato físico, aunque puede haber estado propiciado por
+                                            el rendimiento del juego en las versiones de consola.
+                                            En esto, Cyberpunk 2077 ha sido retirado de PS Store hasta que CD Projekt
+                                            solucione los problemas con el juego, por lo que es posible que haya un
+                                            repunte futuro en las ventas físicas del juego, ante la imposibilidad de
+                                            adquirirlo en formato digital para PS4. Si queréis conocer más información
+                                            sobre estos juegos, este es nuestro análisis de Assassin's Creed Valhalla, y
+                                            este es el análisis de Cyberpunk 2077 en consolas. Sin más dilación, aquí
+                                            tenéis los 10 juegos más vendidos de la semana en Reino Unido, en formato
+                                            físico:
+                                        </p>
+                                        <h4>Top 10 Reino Unido (puesto semana anterior)</h4>
+                                        <ol>
+                                            <li>Assassin's Creed Valhalla</li>
+                                            <li>Call of Duty Black Ops Cold War</li>
+                                            <li>Cyberpunk 2077</li>
+                                            <li>FIFA 21</li>
+                                            <li>Animal Crossing: New Horizons</li>
+                                            <li>Spider-Man: Miles Morales</li>
+                                            <li>Mario Kart 8: Deluxe</li>
+                                            <li>Just Dance 2021</li>
+                                            <li>Ring Fit Adventure </li>
+                                            <li>Super Mario 3D All-Stars </li>
+                                        </ol>
+                                    </div>
+                                    <footer class="news-article__footer mt-5">
+                                        <span class="font-jura d-inline-block text-start">
+                                            12 de Diciembre de
+                                            2020
+                                            <br>
+                                            Por Martín Amechazurra / <a class="text-light" target="_blank"
+                                                href="https://www.3djuegos.com/noticias-ver/210239/assassins-creed-valhalla-lidera-las-ventas-de-navidad-en-uk/">Fuente:
+                                                3D Juegos</a>
+                                        </span>
+        
+                                        <div class="text-end">
+                                            <div class="news-article__socials">
+                                                <a class="text-white" href="#"><i class="fa fa-facebook fa-fw"
+                                                        aria-hidden="true"></i></a>
+                                                <a class="text-white" href="#"><i class="fa fa-twitter fa-fw"
+                                                        aria-hidden="true"></i></a>
+                                                <a class="text-white" href="#"><i class="fa fa-whatsapp fa-fw"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
+                        </section>
+                        <aside class="col-md-3 d-none d-lg-block">
+                            <div class="date-filter-sticky">
+                                <h3>Filtrar</h3>
+                                <ul class="date-filter-sticky__yearlist">
+                                    <li>
+                                        <a class="text-light" href="#">2020</a>
+                                        <ul class="date-filter-sticky__monthlist">
+                                            <li>
+                                                <a href="#">Enero</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Febrero</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Marzo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Abril</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Mayo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Junio</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Julio</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Agosto</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Septiembre</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Octubre</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Noviembre</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Diciembre</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+                <!-- ================================================================================================== -->
+                <!--  !SECTION End: Xbox -->
+                <!-- ================================================================================================== -->
+                <!-- ================================================================================================== -->
+                <!--  SECTION Nintendo -->
+                <!-- ================================================================================================== -->
+                <div class="tab-pane fade" id="nav-nintendo" role="tabpanel" aria-labelledby="nav-nintendo">
+                    <div class="mt-3">
+                        <section>
+                            <article class="asus-article d-flex flex-column justify-content-start justify-content-md-end mt-2">
+                                <div class="text-center mt-3">
+                                    <img class="asus-article__image" src="../images/pc/hardware/rog_logo.png" alt="rog_logo">
+                                </div>
+                                <p class="asus-article__paragraph p-3 m-3 justified text-md-center">
+                                    <strong>LEVANTA EL VUELO</strong>
+        
+                                    La nueva ROG Strix GeForce RTX 3090 incluye innovaciones térmicas diseñadas para
+                                    aprovechar al máximo la nueva arquitectura gráfica NVIDIA Ampere. El nuevo diseño y
+                                    los refuerzos metálicos envuelven los ventiladores Axial-tech. La disposición de los
+                                    ventiladores de la última generación se ha actualizado con un nuevo esquema de
+                                    rotación y funciones especializadas para los ventiladores centrales y auxiliares.
+                                    Bajo las aspas, se encuentra un disipador más grande preparado para hacer frente a
+                                    las cargas térmicas más exigentes. La PCB esconde algunos trucos nuevos bajo la
+                                    manga, y también hemos mejorado la placa trasera para aumentar el rendimiento. Has
+                                    estado esperando lo último en diseño GPU... Pues aquí lo tienes.
+                                </p>
+                            </article>
+                            <article class="full-width-container" style="margin-bottom: -12px;">
+                                <a href="https://www.asus.com/ar/Monitors/ROG-SWIFT-PG348Q/" target="_blank"><img class="w-100"
+                                        src="../images/pc/hardware/rog-monitor.jpg" alt="monitorbanner"></a>
+                            </article>
+        
+                        </section>
+                    </div>
+                </div>
+                <!-- ================================================================================================== -->
+                <!--  !SECTION End: Nintendo -->
+                <!-- ================================================================================================== -->
                 </div>
             </div>
         </div>
@@ -275,67 +543,103 @@
     <!-- ============================================= -->
     <!-- SECTION Footer -->
     <!-- ============================================= -->
-    <footer class="mt-5 text-light mainFooter">
+    <footer class="mainfooter mt-5 text-light">
         <div class="row">
             <!-- ANCHOR Columna 1 -->
-            <article class="col-sm-12 col-md-4 col-lg-4 text-center text-lg-start">
+            <article class="mainfooter__column col-sm-12 col-md-4 col-lg-4 text-center text-lg-start">
                 <h3 class="capitalize fontJura">Sobre Nosotros</h3>
                 <p>
-                    Eternal Gamers es tu web favorita en videojuegos. Contamos con noticias, análisis de los últimos lanzamientos, imágenes, trailers oficiales y más…
+                    Eternal Gamers es tu web favorita en videojuegos. Contamos con noticias, análisis de los últimos
+                    lanzamientos, imágenes, trailers oficiales y más…
                 </p>
-                <h4 class="capitalize fontJura">Seguinos en nuestras redes sociales</h4>
-                <div class="socialIcons">
-                    <a class="text-light" href="#"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
-                    <a class="text-light" href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
-                    <a class="text-light" href="#"><i class="fa fa-youtube fa-fw" aria-hidden="true"></i></a>
-                </div>
-            </article>
-            <!-- ANCHOR Columna 2 -->
-            <article class="col-md-2 d-none d-lg-flex flex-column align-items-center">
-                <h4 class="capitalize fontJura">Navegar</h4>
-                <ul class="listSquare listInside">
-                    <li>
-                        <a class="text-light" class="" href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="text-light" href="pages/pc.html">PC</a>
-                    </li>
-                    <li>
-                        <a class="text-light" href="pages/consoles.html">Consolas</a>
-                    </li>
-                    <li>
-                        <a class="text-light" href="pages/mobiles.html">Móviles</a>
-                    </li>
-                    <li>
-                        <a class="text-light" href="pages/contact.html">Contacto</a>
-                    </li>
-                </ul>
+                <h4 class="capitalize">Seguinos en nuestras redes sociales</h4>
+                <a class="mainfooter__social-icon" href="#"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+                <a class="mainfooter__social-icon" href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
+                <a class="mainfooter__social-icon" href="#"><i class="fa fa-youtube fa-fw" aria-hidden="true"></i></a>
             </article>
             <!-- ANCHOR Columna 3 -->
-            <article class="col-md-4 col-lg-3 text-center text-lg-start mt-5 mt-md-0">
-                <div class="headerLogo">
-                    <div>
-                        <a href="index.html" class="text-light">
-                            <h1 class="fontQuanticoBold">ETERNAL GAMERS</h1>
-                        </a>
-                        <p>
-                            Obra de gamers para gamers.
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <!-- ANCHOR Columna 4 -->
-            <article class="col-md-4 col-lg-3 text-center text-lg-end mt-5 mt-md-0">
+            <article class="mainfooter__column col-md-4 col-lg-3 text-center mt-5 mt-md-0">
                 <h4 class="capitalize fontJura">Sobre el autor de esta página</h4>
                 <p><a class="text-light" href="mailto:josuebaez61@gmail.com?subject=Contacto"><i
                             class="fa fa-envelope fa-fw"></i> josuebaez@gmail.com</a></p>
                 <p><em>Encontrame en mis redes sociales...</em></p>
                 <div class="socialIcons">
-                    <a class="text-light" href="https://www.facebook.com/josueDev61"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/josuebaez61/"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
-                    <a class="text-light" href="www.linkedin.com/in/josuebaez15"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
+                    <a class="mainfooter__social-icon" href="https://www.facebook.com/josueDev61"><i
+                            class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+                    <a class="mainfooter__social-icon" href="https://www.instagram.com/josuebaez61/"><i
+                            class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+                    <a class="mainfooter__social-icon" href="www.linkedin.com/in/josuebaez15"><i
+                            class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
                 </div>
                 <p><em>Josue Baez</em></p>
+            </article>
+            <!-- ANCHOR Columna 2 -->
+            <article class="mainfooter__column col-md-5 d-none d-lg-block">
+                <h3 class="capitalize font-quaticoBold">ETERNAL GAMERS | Mapa </h3>
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <h5>Principal</h5>
+                        <ul class="listSquare listInside">
+                            <li>
+                                <a class="text-light" class="" href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="pc.html">PC</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="consoles.html">Consolas</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="mobiles.html">Móviles</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>PC</h5>
+                        <ul>
+                            <li>
+                                <a class="text-light" class="" href="pc.html#nav-featured-tab">Destacados</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="pc.html#nav-news-tab">Noticias</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="pc.html#nav-hardware-tab">Hardware</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Consolas</h5>
+                        <ul>
+                            <li>
+                                <a class="text-light" class="" href="pc.html#nav-featured-tab">Destacados</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="pc.html#nav-news-tab">Noticias</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="pc.html#nav-hardware-tab">Hardware</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Móviles</h5>
+                        <ul>
+                            <li>
+                                <a class="text-light" class="" href="pc.html#nav-featured-tab">Destacados</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="pc.html#nav-news-tab">Noticias</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="pc.html#nav-hardware-tab">Hardware</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </article>
         </div>
     </footer>
@@ -343,13 +647,15 @@
     <!-- !SECTION Footer -->
     <!-- ============================================= -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6385cb98ab.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/consoles.js"></script>
 </body>
 
 </html>

@@ -10,8 +10,59 @@
         color: #fff;
         font-size: 1.2rem;
     }
+    .nav-link--playstation {
+        &:hover {
+            color: $ps-blue;
+        }
+        color: black;
+        font-size: 1.2rem;
+    }
+    .nav-link--psnav {
+        &:hover {
+            color: $ps-blue;
+        }
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .nav-link--xbox {
+        &:hover {
+            color: $xbox-green;
+        }
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .nav-link--nintendo {
+        &:hover {
+            color: $nintendo-red;
+        }
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
     .nav-link.active, .nav-pills .show>.nav-link {
         color: #fff;
         background-color: $main-red;
+    }
+
+    .nav-link--playstation.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: $ps-blue;
+    }
+
+    .nav-link--psnav.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: $ps-blue;
+    }
+
+    .nav-link--xbox.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: $xbox-green;
+    }
+
+    .nav-link--nintendo.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: $nintendo-red;
     }
 }

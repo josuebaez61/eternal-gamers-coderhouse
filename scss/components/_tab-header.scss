@@ -1,0 +1,37 @@
+@import '../utilities/mixins';
+
+.tab-header {
+    margin-left: -12px;
+    margin-right: -12px;
+    position: relative;
+    background-image: url(../images/consoles/ps5/header-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 600px;
+    padding: 12px;
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: 0px !important;
+    }
+}
+
+.tab-header__title {
+    font-size: 4rem;
+    @include media(xs) {
+        font-size: 3rem;
+    }
+    @include media(xxs) {
+        font-size: 2rem;
+    }
+}
+
+.tab-header__subtitle {
+    font-size: 3rem;
+    @include media(xs) {
+        font-size: 2rem;
+    }
+    @include media(xxs) {
+        font-size: 1.5rem;
+    }
+    padding-left: 40px;
+    padding-right: 40px;
+}

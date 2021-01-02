@@ -15,6 +15,10 @@ $font-jura: "Jura";
     text-transform: capitalize;
 }
 
+.justified {
+    text-align: justify;
+}
+
 .font-jura {
     font-family: $font-jura;
 }
@@ -28,3 +32,4 @@ $font-jura: "Jura";
         font-family: $font-jura;
     }
 }
+
