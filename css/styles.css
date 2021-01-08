@@ -234,19 +234,22 @@ h6 {
     background-color: #1D1D1D;
     box-shadow: 0px 1px 8px #EB3136; }
     .topheader .topheader__nav .topheader__item {
-      background-color: #111111;
-      font-family: "Jura";
-      font-size: 1.5rem; }
-      .topheader .topheader__nav .topheader__item a {
+      font-family: "Jura"; }
+      .topheader .topheader__nav .topheader__item button {
         padding: 1rem;
-        color: white; }
+        color: white;
+        background-color: #111111;
+        font-size: 1.5rem;
+        border-radius: 0px; }
+        .topheader .topheader__nav .topheader__item button:focus {
+          box-shadow: none; }
       .topheader .topheader__nav .topheader__item .topheader__submenu {
         display: none;
         background-color: white;
         height: 100vh;
         left: 0px;
         position: absolute;
-        top: 68px;
+        top: 70px;
         width: 20rem;
         padding-left: 0px; }
         .topheader .topheader__nav .topheader__item .topheader__submenu .topheader__submenu-item {
@@ -254,7 +257,8 @@ h6 {
           border-bottom: transparent 1px solid; }
           .topheader .topheader__nav .topheader__item .topheader__submenu .topheader__submenu-item a {
             color: black;
-            font-size: 1.3rem; }
+            font-size: 1.3rem;
+            padding: 20px; }
         .topheader .topheader__nav .topheader__item .topheader__submenu .topheader__submenu-item:hover {
           background-color: #cecece;
           border-bottom: black 1px solid; }
@@ -264,10 +268,6 @@ h6 {
       @media (max-width: 390px) {
         .topheader .topheader__nav .topheader__item .topheader__submenu {
           width: 15rem; } }
-    .topheader .topheader__nav .topheader__item:hover .topheader__submenu {
-      display: block;
-      animation: slideInLeft;
-      animation-duration: 0.5s; }
   .topheader .topheader__logo {
     color: white; }
     .topheader .topheader__logo h1 {
