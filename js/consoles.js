@@ -42,20 +42,24 @@ function getHash() {
     if (trigger) {
       // NOTE si existe ese elemento...
       var tab = new bootstrap.Tab(trigger);
+      console.log('tab', tab)
       tab.show();
     }
+  } else {
+
   }
 }
 
 var playstationTab = document.querySelector('#nav-playstation-tab');
-playstationTab.addEventListener('shown.bs.tab', () => {
+
+playstationTab.addEventListener('show.bs.tab', (e) => {
   createPSGamesSlider();
 })
 
-playstationTab.addEventListener('hide.bs.tab', () => {
-    $('#ps5-games-slider').slick('unslick');
-})
 
+playstationTab.addEventListener('hide.bs.tab', () => {
+  $('#ps5-games-slider').slick('unslick');
+})
 
 window.addEventListener("popstate", () => {
   // NOTE al cambiar el estado del url...
@@ -64,3 +68,5 @@ window.addEventListener("popstate", () => {
 
 getHash();
 createPSGamesSlider();
+
+// createNintendoSlider();

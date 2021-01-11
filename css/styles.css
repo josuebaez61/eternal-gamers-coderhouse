@@ -85,7 +85,7 @@ body {
   width: 800px;
   margin: 0px auto; }
 
-#ps5-games-slider .slick-prev:before, #ps5-games-slider .slick-next:before {
+#ps5-games-slider .slick-prev:before, #ps5-games-slider .slick-next:before, #nintendo-games-slider .slick-prev:before, #nintendo-games-slider .slick-next:before {
   color: black; }
 
 .ps5-comparison {
@@ -172,17 +172,95 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 0px; }
 
-.xbox-container__title {
-  font-size: 2rem; }
-  @media (min-width: 992px) {
-    .xbox-container__title {
-      font-size: 3.5rem; } }
+@media (min-width: 576px) {
+  .xbox-container__title {
+    font-size: 2rem; } }
+
+@media (min-width: 992px) {
+  .xbox-container__title {
+    font-size: 3.5rem; } }
 
 .xbox-joystick-container .xbox-joystick-container__text {
   position: absolute;
   top: 0px;
   padding: 1rem;
   height: 100%; }
+
+.xbox-joystick-container .xbox-joystick-container__paragraph {
+  font-size: 0.7rem; }
+  @media (min-width: 576px) {
+    .xbox-joystick-container .xbox-joystick-container__paragraph {
+      font-size: 1rem; } }
+
+.mb-fullwidth {
+  margin-bottom: -12px; }
+
+.nintendo-container {
+  color: black;
+  background-color: white;
+  margin-bottom: -12px;
+  margin-left: -12px;
+  margin-right: -12px; }
+  .nintendo-container h1 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    border: 0px !important; }
+  .nintendo-container h2 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    border: 0px !important; }
+  .nintendo-container h3 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    border: 0px !important; }
+  .nintendo-container h4 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    border: 0px !important; }
+  .nintendo-container h5 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    border: 0px !important; }
+  .nintendo-container h6 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    border: 0px !important; }
+
+.nintendo-threeinone {
+  height: max-content; }
+  .nintendo-threeinone .nintendo-threeinon__desc {
+    padding-left: 80px;
+    padding-right: 80px; }
+
+.nintendo-games-gallery .g-1 {
+  --bs-gutter-y: 0.30rem; }
+
+.nintendo-games-gallery .nintendo-games-gallery__itembox {
+  overflow: hidden; }
+  .nintendo-games-gallery .nintendo-games-gallery__itembox a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black; }
+    @media (min-width: 768px) {
+      .nintendo-games-gallery .nintendo-games-gallery__itembox a {
+        font-size: 1.3rem; } }
+    @media (min-width: 992px) {
+      .nintendo-games-gallery .nintendo-games-gallery__itembox a {
+        font-size: 1.5rem; } }
+    .nintendo-games-gallery .nintendo-games-gallery__itembox a p {
+      margin-bottom: 0px; }
+  .nintendo-games-gallery .nintendo-games-gallery__itembox img {
+    transition: transform 1s; }
+  .nintendo-games-gallery .nintendo-games-gallery__itembox a:hover img {
+    transform: scale(1.1, 1.1); }
+
+.nintendo-games-gallery .nintendo-games-gallery__nested {
+  height: max-content; }
+
+.nintendo-games-gallery .nintendo-games-gallery__text {
+  position: absolute;
+  max-width: 280px;
+  bottom: 3px;
+  left: 15px; }
+
+.nintendo-games-gallery .nintendo-games-gallery__text--main {
+  bottom: 5px; }
 
 @font-face {
   font-family: "Quantico Bold";
