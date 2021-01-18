@@ -43,6 +43,11 @@
         }
 
     }
+
+    .mainblock__content--small {
+        max-width: 650px;
+    }
+
     @media (max-width: 575px) {
         .mainblock__content {
             border-radius: 0px;
