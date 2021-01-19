@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -261,6 +262,37 @@ body {
 
 .nintendo-games-gallery .nintendo-games-gallery__text--main {
   bottom: 5px; }
+
+.main-404 {
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; }
+  .main-404 .main-404__text {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 30px; }
+    .main-404 .main-404__text h1 {
+      font-family: 'Press Start 2P', cursive; }
+    .main-404 .main-404__text h2 {
+      font-family: 'Press Start 2P', cursive; }
+    .main-404 .main-404__text h3 {
+      font-family: 'Press Start 2P', cursive; }
+    .main-404 .main-404__text h4 {
+      font-family: 'Press Start 2P', cursive; }
+    .main-404 .main-404__text h5 {
+      font-family: 'Press Start 2P', cursive; }
+    .main-404 .main-404__text h6 {
+      font-family: 'Press Start 2P', cursive; }
+
+.body-404 {
+  background-color: white; }
+
+.no-radius {
+  border-radius: 0px; }
 
 @font-face {
   font-family: "Quantico Bold";

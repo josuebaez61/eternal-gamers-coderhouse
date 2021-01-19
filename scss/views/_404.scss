@@ -1,0 +1,28 @@
+@import '../utilities/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.main-404 {
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    .main-404__text {
+        text-align: center;
+        @include allHeaderText {
+            font-family: 'Press Start 2P', cursive;
+        }
+        font-family: 'Press Start 2P', cursive;
+        position: absolute;
+        top: 30px;
+    }
+}
+
+.body-404 {
+    background-color: white;
+}
+
+.no-radius {
+    border-radius: 0px;
+}
